@@ -1,0 +1,418 @@
+{
+  "rays_per_category": 15,
+  "categories": [
+    "random",
+    "axis_aligned",
+    "near_axis",
+    "exact_diagonal",
+    "near_diagonal",
+    "grazing"
+  ],
+  "ground_truth": "full-f64 on true f64 ray (== kernel)",
+  "cases": {
+    "F16": {
+      "rho_max": 1.9375,
+      "ray_quantization": {
+        "rays": 90,
+        "topology_mismatches": 30,
+        "p99_tau_abs_error": 9.03210870920092e-05,
+        "max_tau_abs_error": 0.0006831849766251175,
+        "p99_event_distance_error": 0.0003346042861982479,
+        "max_event_distance_error": 0.0012576499600571722
+      },
+      "pipeline": {
+        "clock32_div": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 30,
+            "p99_tau_abs_error": 9.034406577569948e-05,
+            "max_tau_abs_error": 0.0006831733200309831,
+            "p99_event_distance_error": 0.0003346841624209951,
+            "max_event_distance_error": 0.0012577194910683431
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 13,
+            "p99_tau_abs_error": 6.814669456733925e-07,
+            "max_tau_abs_error": 7.06633668023926e-07,
+            "p99_event_distance_error": 4.010385450392562e-07,
+            "max_event_distance_error": 6.05757916716243e-07
+          },
+          "mean_newton_iterations": 3.1196581196581197,
+          "max_newton_iterations": 4,
+          "newton_fallbacks": 0
+        },
+        "clock32_cross": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 27,
+            "p99_tau_abs_error": 9.034406577569948e-05,
+            "max_tau_abs_error": 0.0006831733200309831,
+            "p99_event_distance_error": 0.0003346841624209951,
+            "max_event_distance_error": 0.0012577194910683431
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 19,
+            "p99_tau_abs_error": 6.814669456733925e-07,
+            "max_tau_abs_error": 7.06633668023926e-07,
+            "p99_event_distance_error": 4.010385450392562e-07,
+            "max_event_distance_error": 6.05757916716243e-07
+          },
+          "mean_newton_iterations": 3.1196581196581197,
+          "max_newton_iterations": 4,
+          "newton_fallbacks": 0
+        },
+        "full32_div": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 30,
+            "p99_tau_abs_error": 9.031844352765401e-05,
+            "max_tau_abs_error": 0.0006829860849617564,
+            "p99_event_distance_error": 0.0003346685282223927,
+            "max_event_distance_error": 0.001257893341453542
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 13,
+            "p99_tau_abs_error": 1.2071465610175023e-06,
+            "max_tau_abs_error": 1.5636427459497781e-06,
+            "p99_event_distance_error": 1.2829983797590927e-06,
+            "max_event_distance_error": 1.872276369496717e-06
+          },
+          "mean_newton_iterations": 2.156695156695157,
+          "max_newton_iterations": 3,
+          "newton_fallbacks": 0
+        },
+        "full32_cross": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 27,
+            "p99_tau_abs_error": 9.031844352765401e-05,
+            "max_tau_abs_error": 0.0006829860849617564,
+            "p99_event_distance_error": 0.0003346685282223927,
+            "max_event_distance_error": 0.001257893341453542
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 19,
+            "p99_tau_abs_error": 1.2071465610175023e-06,
+            "max_tau_abs_error": 1.5636427459497781e-06,
+            "p99_event_distance_error": 1.2829983797590927e-06,
+            "max_event_distance_error": 1.872276369496717e-06
+          },
+          "mean_newton_iterations": 2.156695156695157,
+          "max_newton_iterations": 3,
+          "newton_fallbacks": 0
+        }
+      }
+    },
+    "F32": {
+      "rho_max": 1.96875,
+      "ray_quantization": {
+        "rays": 90,
+        "topology_mismatches": 30,
+        "p99_tau_abs_error": 1.3049433973510992e-06,
+        "max_tau_abs_error": 1.489861159775785e-06,
+        "p99_event_distance_error": 1.707775401538214e-06,
+        "max_event_distance_error": 2.491124588388516e-06
+      },
+      "pipeline": {
+        "clock32_div": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 29,
+            "p99_tau_abs_error": 1.145185581741259e-06,
+            "max_tau_abs_error": 1.526849833233257e-06,
+            "p99_event_distance_error": 1.8625876858635593e-06,
+            "max_event_distance_error": 2.445792285143966e-06
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 15,
+            "p99_tau_abs_error": 7.095394764267125e-07,
+            "max_tau_abs_error": 8.582082466901397e-07,
+            "p99_event_distance_error": 3.884118493502342e-07,
+            "max_event_distance_error": 4.409896661172752e-07
+          },
+          "mean_newton_iterations": 2.96011396011396,
+          "max_newton_iterations": 4,
+          "newton_fallbacks": 0
+        },
+        "clock32_cross": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 29,
+            "p99_tau_abs_error": 1.145185581741259e-06,
+            "max_tau_abs_error": 1.526849833233257e-06,
+            "p99_event_distance_error": 1.8625876858635593e-06,
+            "max_event_distance_error": 2.445792285143966e-06
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 20,
+            "p99_tau_abs_error": 7.095394764267125e-07,
+            "max_tau_abs_error": 8.582082466901397e-07,
+            "p99_event_distance_error": 3.884118493502342e-07,
+            "max_event_distance_error": 4.409896661172752e-07
+          },
+          "mean_newton_iterations": 2.96011396011396,
+          "max_newton_iterations": 4,
+          "newton_fallbacks": 0
+        },
+        "full32_div": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 29,
+            "p99_tau_abs_error": 1.8235912492192692e-06,
+            "max_tau_abs_error": 2.415674960953851e-06,
+            "p99_event_distance_error": 2.254693953318565e-06,
+            "max_event_distance_error": 3.2580919082647597e-06
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 15,
+            "p99_tau_abs_error": 2.2960868983368244e-06,
+            "max_tau_abs_error": 2.3859529179048877e-06,
+            "p99_event_distance_error": 1.8550775457981672e-06,
+            "max_event_distance_error": 3.0923784173353397e-06
+          },
+          "mean_newton_iterations": 1.98005698005698,
+          "max_newton_iterations": 3,
+          "newton_fallbacks": 0
+        },
+        "full32_cross": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 29,
+            "p99_tau_abs_error": 1.8235912492192692e-06,
+            "max_tau_abs_error": 2.415674960953851e-06,
+            "p99_event_distance_error": 2.3011644350035e-06,
+            "max_event_distance_error": 3.500235777664784e-06
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 20,
+            "p99_tau_abs_error": 2.2849798622104345e-06,
+            "max_tau_abs_error": 2.2849798622104345e-06,
+            "p99_event_distance_error": 1.8550775457981672e-06,
+            "max_event_distance_error": 3.334522286735364e-06
+          },
+          "mean_newton_iterations": 1.98005698005698,
+          "max_newton_iterations": 3,
+          "newton_fallbacks": 0
+        }
+      }
+    },
+    "F64": {
+      "rho_max": 1.984375,
+      "ray_quantization": {
+        "rays": 90,
+        "topology_mismatches": 30,
+        "p99_tau_abs_error": 0.0003130914867017063,
+        "max_tau_abs_error": 0.0005817389299536124,
+        "p99_event_distance_error": 6.353079722209981e-07,
+        "max_event_distance_error": 3.961861397483446e-05
+      },
+      "pipeline": {
+        "clock32_div": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 30,
+            "p99_tau_abs_error": 0.0003132676906757579,
+            "max_tau_abs_error": 0.000581737293294804,
+            "p99_event_distance_error": 8.572308928744809e-07,
+            "max_event_distance_error": 3.965032400365942e-05
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 15,
+            "p99_tau_abs_error": 6.60801165053293e-07,
+            "max_tau_abs_error": 6.880035501310999e-07,
+            "p99_event_distance_error": 3.9867186873543266e-07,
+            "max_event_distance_error": 4.927296402001957e-07
+          },
+          "mean_newton_iterations": 2.9051724137931036,
+          "max_newton_iterations": 4,
+          "newton_fallbacks": 0
+        },
+        "clock32_cross": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 30,
+            "p99_tau_abs_error": 0.0003132676906757579,
+            "max_tau_abs_error": 0.000581737293294804,
+            "p99_event_distance_error": 8.572308928744809e-07,
+            "max_event_distance_error": 3.965032400365942e-05
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 21,
+            "p99_tau_abs_error": 6.60801165053293e-07,
+            "max_tau_abs_error": 6.880035501310999e-07,
+            "p99_event_distance_error": 3.9867186873543266e-07,
+            "max_event_distance_error": 4.927296402001957e-07
+          },
+          "mean_newton_iterations": 2.9051724137931036,
+          "max_newton_iterations": 4,
+          "newton_fallbacks": 0
+        },
+        "full32_div": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 30,
+            "p99_tau_abs_error": 0.00031316579049461596,
+            "max_tau_abs_error": 0.0005808371888598174,
+            "p99_event_distance_error": 3.7968207484872617e-06,
+            "max_event_distance_error": 3.969268966397266e-05
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 15,
+            "p99_tau_abs_error": 2.5822960089394423e-06,
+            "max_tau_abs_error": 5.207193316536518e-06,
+            "p99_event_distance_error": 1.7779029127673466e-06,
+            "max_event_distance_error": 4.110580388072549e-06
+          },
+          "mean_newton_iterations": 1.9540229885057472,
+          "max_newton_iterations": 2,
+          "newton_fallbacks": 0
+        },
+        "full32_cross": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 30,
+            "p99_tau_abs_error": 0.00031316579049461596,
+            "max_tau_abs_error": 0.0005808371888598174,
+            "p99_event_distance_error": 3.7968207484872617e-06,
+            "max_event_distance_error": 3.969268966397266e-05
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 21,
+            "p99_tau_abs_error": 2.5822960089394423e-06,
+            "max_tau_abs_error": 5.207193316536518e-06,
+            "p99_event_distance_error": 1.6422092136458635e-06,
+            "max_event_distance_error": 4.110580388072549e-06
+          },
+          "mean_newton_iterations": 1.9540229885057472,
+          "max_newton_iterations": 2,
+          "newton_fallbacks": 0
+        }
+      }
+    },
+    "F128": {
+      "rho_max": 1.9921875,
+      "ray_quantization": {
+        "rays": 90,
+        "topology_mismatches": 30,
+        "p99_tau_abs_error": 1.2526902992731038e-05,
+        "max_tau_abs_error": 6.363609122095326e-05,
+        "p99_event_distance_error": 2.6697813194865204e-05,
+        "max_event_distance_error": 9.125601589410337e-05
+      },
+      "pipeline": {
+        "clock32_div": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 30,
+            "p99_tau_abs_error": 1.2553130240728873e-05,
+            "max_tau_abs_error": 6.394188661396072e-05,
+            "p99_event_distance_error": 2.67828771854366e-05,
+            "max_event_distance_error": 9.129389713979918e-05
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 15,
+            "p99_tau_abs_error": 7.472617779669121e-07,
+            "max_tau_abs_error": 7.612659160827207e-07,
+            "p99_event_distance_error": 3.942617936303353e-07,
+            "max_event_distance_error": 5.259844044758211e-07
+          },
+          "mean_newton_iterations": 2.770538243626062,
+          "max_newton_iterations": 3,
+          "newton_fallbacks": 0
+        },
+        "clock32_cross": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 30,
+            "p99_tau_abs_error": 1.2553130240728873e-05,
+            "max_tau_abs_error": 6.394188661396072e-05,
+            "p99_event_distance_error": 2.67828771854366e-05,
+            "max_event_distance_error": 9.129389713979918e-05
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 20,
+            "p99_tau_abs_error": 7.472617779180623e-07,
+            "max_tau_abs_error": 7.612659156386314e-07,
+            "p99_event_distance_error": 3.942617945540409e-07,
+            "max_event_distance_error": 5.259844044758211e-07
+          },
+          "mean_newton_iterations": 2.770538243626062,
+          "max_newton_iterations": 3,
+          "newton_fallbacks": 0
+        },
+        "full32_div": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 30,
+            "p99_tau_abs_error": 1.4308521487622598e-05,
+            "max_tau_abs_error": 6.172557936157119e-05,
+            "p99_event_distance_error": 2.6430458468631897e-05,
+            "max_event_distance_error": 9.127391720298306e-05
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 15,
+            "p99_tau_abs_error": 4.117605765232566e-06,
+            "max_tau_abs_error": 7.0084178256379914e-06,
+            "p99_event_distance_error": 2.7005271160618405e-06,
+            "max_event_distance_error": 6.935336433144812e-06
+          },
+          "mean_newton_iterations": 1.8640226628895185,
+          "max_newton_iterations": 2,
+          "newton_fallbacks": 0
+        },
+        "full32_cross": {
+          "rays": 90,
+          "end_to_end": {
+            "rays": 90,
+            "topology_mismatches": 30,
+            "p99_tau_abs_error": 1.4308521487622598e-05,
+            "max_tau_abs_error": 6.172557936157119e-05,
+            "p99_event_distance_error": 2.6430458468631897e-05,
+            "max_event_distance_error": 9.127391720298306e-05
+          },
+          "pipeline_only": {
+            "rays": 90,
+            "topology_mismatches": 20,
+            "p99_tau_abs_error": 4.117605765232566e-06,
+            "max_tau_abs_error": 7.0084178256379914e-06,
+            "p99_event_distance_error": 2.7005271160618405e-06,
+            "max_event_distance_error": 6.935336433144812e-06
+          },
+          "mean_newton_iterations": 1.8640226628895185,
+          "max_newton_iterations": 2,
+          "newton_fallbacks": 0
+        }
+      }
+    }
+  }
+}

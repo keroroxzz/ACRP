@@ -1,0 +1,25 @@
+{
+  "seed": 20260718,
+  "grid_cells": [
+    6,
+    5,
+    7
+  ],
+  "random_rays": 180,
+  "adversarial_rays": 50,
+  "segmentation_mismatches": 0,
+  "max_segment_boundary_error": 3.552713678800501e-15,
+  "max_total_tau_abs_error": 1.354472090042691e-14,
+  "max_total_tau_rel_error": 1.1785596650817959e-14,
+  "event_classification_mismatches": 0,
+  "max_event_distance_abs_error": 6.841354149855761e-09,
+  "max_event_tau_residual": 1.9702295350754184e-12,
+  "inversion_failures": 0,
+  "mean_inversion_iterations": 4.1184012066365,
+  "p95_inversion_iterations": 7.0,
+  "max_inversion_iterations": 22,
+  "mean_inversion_fallbacks": 0.07239819004524888,
+  "max_inversion_fallbacks": 2,
+  "countdown_max_error": 8.993296773951442e-09,
+  "all_tests_passed": true
+}

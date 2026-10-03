@@ -1,0 +1,32 @@
+{
+  "A-t": {
+    "x": 813,
+    "y": 802,
+    "width": 384,
+    "height": 384
+  },
+  "B-t": {
+    "x": 0,
+    "y": 589,
+    "width": 384,
+    "height": 384
+  },
+  "B-h": {
+    "x": 0,
+    "y": 658,
+    "width": 384,
+    "height": 384
+  },
+  "preset-front": {
+    "x": 1802,
+    "y": 834,
+    "width": 384,
+    "height": 384
+  },
+  "postset-side": {
+    "x": 182,
+    "y": 834,
+    "width": 384,
+    "height": 384
+  }
+}

@@ -1,0 +1,26 @@
+# A3 Transactional Event Validation
+
+{
+  "seed": 20260718,
+  "rays_per_frequency": 6,
+  "target_fraction": 0.5,
+  "cases": {
+    "F16": {
+      "rays": 6,
+      "topology_mismatches": 0,
+      "p99_tau_abs_error": 4.263256414560602e-15,
+      "max_tau_abs_error": 4.440892098500626e-15,
+      "p99_event_distance_error": 3.508698923404552e-07,
+      "max_event_distance_error": 3.555156737888865e-07
+    },
+    "F128": {
+      "rays": 6,
+      "topology_mismatches": 0,
+      "p99_tau_abs_error": 4.7517545453956705e-15,
+      "max_tau_abs_error": 4.884981308350689e-15,
+      "p99_event_distance_error": 1.297692702895148e-06,
+      "max_event_distance_error": 1.3437317090136958e-06
+    }
+  },
+  "conclusion": "With integer axis/octave transactions, float32 boundary-time perturbations can change the event list while preserving total optical depth and median free-path location to very small error in this focused pilot."
+}

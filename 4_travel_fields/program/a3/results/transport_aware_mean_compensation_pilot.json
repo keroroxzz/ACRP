@@ -1,0 +1,49 @@
+{
+  "seed": 20260718,
+  "rays": 300,
+  "octave_means": [
+    0.33192336743245693,
+    0.15637844929597366,
+    0.07812876563155807,
+    0.04110687731264443,
+    0.020399776876704495
+  ],
+  "results": {
+    "K3": {
+      "raw": {
+        "mean_signed_tau_error": -0.1964317110756196,
+        "mean_abs_tau_error": 0.1964317110756196,
+        "p95_abs_tau_error": 0.29348830016780325,
+        "p99_abs_tau_error": 0.34526377930971675,
+        "p95_transmittance_error": 0.060350943144231034,
+        "p99_transmittance_error": 0.0683896839383987
+      },
+      "mean": {
+        "mean_signed_tau_error": -0.0002434312368093434,
+        "mean_abs_tau_error": 0.017152219546872082,
+        "p95_abs_tau_error": 0.046929656013100264,
+        "p99_abs_tau_error": 0.05656374254925673,
+        "p95_transmittance_error": 0.006700790019511387,
+        "p99_transmittance_error": 0.01119704091988442
+      }
+    },
+    "K4": {
+      "raw": {
+        "mean_signed_tau_error": -0.06509627696966735,
+        "mean_abs_tau_error": 0.06509627696966735,
+        "p95_abs_tau_error": 0.0952392689548069,
+        "p99_abs_tau_error": 0.111559733870033,
+        "p95_transmittance_error": 0.017745920907812626,
+        "p99_transmittance_error": 0.025134251487097366
+      },
+      "mean": {
+        "mean_signed_tau_error": -2.6941183406171132e-05,
+        "mean_abs_tau_error": 0.005354411026736451,
+        "p95_abs_tau_error": 0.013238923779023762,
+        "p99_abs_tau_error": 0.0198776527208544,
+        "p95_transmittance_error": 0.002684776653994779,
+        "p99_transmittance_error": 0.004220903084161244
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "seed": 20260718,
+  "rays": 650,
+  "model": {
+    "density": "B(x) + m(x) R(x)",
+    "low_frequencies": [
+      1,
+      2,
+      4
+    ],
+    "residual_frequencies": [
+      8,
+      16
+    ],
+    "modulation_frequency": 1,
+    "modulation_range": [
+      0.2,
+      1.5
+    ],
+    "mu_R": 0.07865969409461937,
+    "mu_m": 0.8927856221678669,
+    "full_segment_density_degree": 18,
+    "full_segment_optical_depth_degree": 19,
+    "exact_full_quadrature": "GL10",
+    "approximate_segment_density_degree": 9,
+    "exact_approximate_quadrature": "GL5"
+  },
+  "results": {
+    "raw": {
+      "mean_signed_tau_error": -0.21225194664598745,
+      "mean_abs_tau_error": 0.21225194664598745,
+      "p95_abs_tau_error": 0.3252428634235812,
+      "p99_abs_tau_error": 0.3621219940447285,
+      "mean_abs_transmittance_error": 0.04478492346274962,
+      "p95_transmittance_error": 0.07675196219514499,
+      "p99_transmittance_error": 0.09360783382854428
+    },
+    "global_mean": {
+      "mean_signed_tau_error": 0.001775613667705675,
+      "mean_abs_tau_error": 0.02699737156758114,
+      "p95_abs_tau_error": 0.06818133809313964,
+      "p99_abs_tau_error": 0.08246559622783017,
+      "mean_abs_transmittance_error": 0.0056168669093805594,
+      "p95_transmittance_error": 0.01720715940623754,
+      "p99_transmittance_error": 0.02393418096584042
+    },
+    "conditional_mean": {
+      "mean_signed_tau_error": 0.002030760842291302,
+      "mean_abs_tau_error": 0.01965968620465225,
+      "p95_abs_tau_error": 0.04865675381374601,
+      "p99_abs_tau_error": 0.06323295229478514,
+      "mean_abs_transmittance_error": 0.004051940645221233,
+      "p95_transmittance_error": 0.011251858695763693,
+      "p99_transmittance_error": 0.016746091036369825
+    }
+  }
+}

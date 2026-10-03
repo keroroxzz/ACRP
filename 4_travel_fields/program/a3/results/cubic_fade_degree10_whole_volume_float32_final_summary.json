@@ -1,0 +1,23 @@
+{
+  "seed": 20260718,
+  "random_rays": 500,
+  "adversarial_rays": 50,
+  "targets": 3796,
+  "iterations": 16,
+  "hit_miss_mismatches": 0,
+  "whole_tau_p99_abs_error": 2.0465496965726964e-06,
+  "whole_tau_max_abs_error": 1.0274590801273575e-05,
+  "whole_tau_max_rel_error": 2.0655526271795316e-06,
+  "event_distance_p95_error": 3.786792671434114e-06,
+  "event_distance_p99_error": 7.607941640381838e-05,
+  "event_distance_max_error": 0.000744166069940988,
+  "event_tau_residual_p99": 4.807531360251543e-06,
+  "event_tau_residual_max": 1.112593993004019e-05,
+  "mean_fallbacks": 0.05268022181146026,
+  "p95_fallbacks": 0.0,
+  "max_fallbacks": 4,
+  "mean_freeze_iteration": 3.128157732593962,
+  "p95_freeze_iteration": 6.0,
+  "max_freeze_iteration": 16,
+  "all_tests_passed": true
+}

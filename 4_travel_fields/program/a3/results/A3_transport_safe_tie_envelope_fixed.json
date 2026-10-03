@@ -1,0 +1,89 @@
+{
+  "seed": 20260718,
+  "eps_tau": 1e-06,
+  "rays_per_frequency": 8,
+  "cases": {
+    "F16_immediate": {
+      "rays": 8,
+      "topology_mismatches": 0,
+      "p99_tau_abs_error": 4.378719609121617e-15,
+      "max_tau_abs_error": 4.440892098500626e-15,
+      "mean_collapsed_length": 0.0,
+      "mean_merged_groups": 0.0,
+      "fraction_within_local_bound": 1.0
+    },
+    "F16_ulp": {
+      "rays": 8,
+      "topology_mismatches": 0,
+      "p99_tau_abs_error": 4.378719609121617e-15,
+      "max_tau_abs_error": 4.440892098500626e-15,
+      "mean_collapsed_length": 0.0,
+      "mean_merged_groups": 0.0,
+      "fraction_within_local_bound": 1.0
+    },
+    "F16_transport": {
+      "rays": 8,
+      "topology_mismatches": 0,
+      "p99_tau_abs_error": 4.378719609121617e-15,
+      "max_tau_abs_error": 4.440892098500626e-15,
+      "mean_collapsed_length": 0.0,
+      "mean_merged_groups": 0.0,
+      "fraction_within_local_bound": 1.0
+    },
+    "F64_immediate": {
+      "rays": 8,
+      "topology_mismatches": 0,
+      "p99_tau_abs_error": 3.552713678800501e-15,
+      "max_tau_abs_error": 3.552713678800501e-15,
+      "mean_collapsed_length": 0.0,
+      "mean_merged_groups": 0.0,
+      "fraction_within_local_bound": 1.0
+    },
+    "F64_ulp": {
+      "rays": 8,
+      "topology_mismatches": 5,
+      "p99_tau_abs_error": 9.132250511356686e-14,
+      "max_tau_abs_error": 9.592326932761353e-14,
+      "mean_collapsed_length": 1.5914440155029297e-05,
+      "mean_merged_groups": 1.0,
+      "fraction_within_local_bound": 1.0
+    },
+    "F64_transport": {
+      "rays": 8,
+      "topology_mismatches": 0,
+      "p99_tau_abs_error": 3.552713678800501e-15,
+      "max_tau_abs_error": 3.552713678800501e-15,
+      "mean_collapsed_length": 0.0,
+      "mean_merged_groups": 0.0,
+      "fraction_within_local_bound": 1.0
+    },
+    "F128_immediate": {
+      "rays": 8,
+      "topology_mismatches": 2,
+      "p99_tau_abs_error": 9.841016890277386e-15,
+      "max_tau_abs_error": 1.021405182655144e-14,
+      "mean_collapsed_length": 0.0,
+      "mean_merged_groups": 0.375,
+      "fraction_within_local_bound": 1.0
+    },
+    "F128_ulp": {
+      "rays": 8,
+      "topology_mismatches": 8,
+      "p99_tau_abs_error": 1.3438095081141909e-12,
+      "max_tau_abs_error": 1.3606893389805919e-12,
+      "mean_collapsed_length": 7.236003875732422e-05,
+      "mean_merged_groups": 4.625,
+      "fraction_within_local_bound": 1.0
+    },
+    "F128_transport": {
+      "rays": 8,
+      "topology_mismatches": 2,
+      "p99_tau_abs_error": 9.841016890277386e-15,
+      "max_tau_abs_error": 1.021405182655144e-14,
+      "mean_collapsed_length": 0.0,
+      "mean_merged_groups": 0.375,
+      "fraction_within_local_bound": 1.0
+    }
+  },
+  "bug_fixed": "Cell updates now use axis/octave integer crossing transactions instead of reclassifying from approximate float32 event time."
+}

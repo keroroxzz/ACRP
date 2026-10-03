@@ -1,0 +1,209 @@
+{
+  "phase": "H2",
+  "experiment": "full-camera-ray synthetic-extinction closure",
+  "timestamp_local": "2026-07-26T09:24:34+0800",
+  "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+  "resolution": [
+    640,
+    360
+  ],
+  "shader_sha256": "584cbdc5783f2b582c469aaf61ecb784a7c680f27a17cf4d33a42015f2d99ff0",
+  "reference_step_km": 0.03,
+  "synthetic_extinction": "cloudDensity * SIGMA_T * DENS",
+  "macro_build_ms": 28.619775999999998,
+  "cumulant_build_ms": 97.487872,
+  "records": [
+    {
+      "scene": "sparse_wide",
+      "cloud_pixels": 122590,
+      "substantial_pixels": 108244,
+      "mean_analytic_length_fraction": 0.00010152284085052088,
+      "b1": {
+        "pixels": 108244,
+        "mean_absolute_error": 0.0004011063138023019,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.001580684445798397,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 4.878273963928223
+      },
+      "b2": {
+        "pixels": 108244,
+        "mean_absolute_error": 0.00036380832898430526,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.001578427036292851,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 5.979498863220215
+      },
+      "b4": {
+        "pixels": 108244,
+        "mean_absolute_error": 0.0003655996988527477,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0015737542416900396,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 5.853522300720215
+      }
+    },
+    {
+      "scene": "low_up",
+      "cloud_pixels": 109644,
+      "substantial_pixels": 104696,
+      "mean_analytic_length_fraction": 0.00010005610238295048,
+      "b1": {
+        "pixels": 104696,
+        "mean_absolute_error": 0.0004026296082884073,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.001962472917512059,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 0.6680317521095276
+      },
+      "b2": {
+        "pixels": 104696,
+        "mean_absolute_error": 0.0003538271994329989,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0017792130820453167,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 0.7912375330924988
+      },
+      "b4": {
+        "pixels": 104696,
+        "mean_absolute_error": 0.0003572450950741768,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0017887691501528025,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 0.790771484375
+      }
+    },
+    {
+      "scene": "near_tower",
+      "cloud_pixels": 118302,
+      "substantial_pixels": 115100,
+      "mean_analytic_length_fraction": 4.203687785775401e-05,
+      "b1": {
+        "pixels": 115100,
+        "mean_absolute_error": 0.00031659522210247815,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0010684413136914372,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 1.264673113822937
+      },
+      "b2": {
+        "pixels": 115100,
+        "mean_absolute_error": 0.0002756694157142192,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0009896793635562062,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 1.4687219858169556
+      },
+      "b4": {
+        "pixels": 115100,
+        "mean_absolute_error": 0.000279178872006014,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0009946930222213268,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 1.4397908449172974
+      }
+    },
+    {
+      "scene": "inside_proxy",
+      "cloud_pixels": 118234,
+      "substantial_pixels": 117789,
+      "mean_analytic_length_fraction": 0.0011210206430405378,
+      "b1": {
+        "pixels": 117789,
+        "mean_absolute_error": 8.775676542427391e-05,
+        "p95_absolute_error": 7.980621603564891e-08,
+        "mean_relative_error": 0.0005817115306854248,
+        "p95_relative_error": 3.990310779045078e-06,
+        "max_relative_error": 0.32511106133461
+      },
+      "b2": {
+        "pixels": 117789,
+        "mean_absolute_error": 7.483627996407449e-05,
+        "p95_absolute_error": 6.687170639452202e-08,
+        "mean_relative_error": 0.0004958624485880136,
+        "p95_relative_error": 3.343585422044255e-06,
+        "max_relative_error": 0.2544902265071869
+      },
+      "b4": {
+        "pixels": 117789,
+        "mean_absolute_error": 7.602434197906405e-05,
+        "p95_absolute_error": 6.756358743586936e-08,
+        "mean_relative_error": 0.0005042384145781398,
+        "p95_relative_error": 3.378179462742938e-06,
+        "max_relative_error": 0.2645047605037689
+      }
+    },
+    {
+      "scene": "high_overcast_proxy",
+      "cloud_pixels": 92137,
+      "substantial_pixels": 88422,
+      "mean_analytic_length_fraction": 9.116384899243712e-05,
+      "b1": {
+        "pixels": 88422,
+        "mean_absolute_error": 0.0005718747852370143,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.002285371068865061,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 1.0438156127929688
+      },
+      "b2": {
+        "pixels": 88422,
+        "mean_absolute_error": 0.0005123309092596173,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0022282276768237352,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 1.240881085395813
+      },
+      "b4": {
+        "pixels": 88422,
+        "mean_absolute_error": 0.0005169755895622075,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0022256444208323956,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 1.214046597480774
+      }
+    },
+    {
+      "scene": "grazing",
+      "cloud_pixels": 71749,
+      "substantial_pixels": 69714,
+      "mean_analytic_length_fraction": 9.075966954696923e-05,
+      "b1": {
+        "pixels": 69714,
+        "mean_absolute_error": 0.0003929718513973057,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0022910675033926964,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 2.6598119735717773
+      },
+      "b2": {
+        "pixels": 69714,
+        "mean_absolute_error": 0.00035783558269031346,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0022340980358421803,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 3.040780544281006
+      },
+      "b4": {
+        "pixels": 69714,
+        "mean_absolute_error": 0.0003594971203710884,
+        "p95_absolute_error": 0.0,
+        "mean_relative_error": 0.0022315611131489277,
+        "p95_relative_error": 0.0,
+        "max_relative_error": 3.0024962425231934
+      }
+    }
+  ],
+  "gates": {
+    "analytic_length_at_least_10pct_all_scenes": false,
+    "b2_p95_under_2pct_all_scenes": true,
+    "b4_p95_under_2pct_all_scenes": true,
+    "b2_better_than_b1_all_scenes": false
+  },
+  "limitations": [
+    "Uses synthetic uniform extinction, not deck-specific production optics.",
+    "Validates camera-ray transmittance only, not in-scattering.",
+    "Boundary and out-of-grid segments use the fine reference path.",
+    "An error gate is not meaningful unless analytic coverage also passes."
+  ]
+}

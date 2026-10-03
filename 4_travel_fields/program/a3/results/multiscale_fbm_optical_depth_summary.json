@@ -1,0 +1,21 @@
+{
+  "seed": 20260718,
+  "octaves": 3,
+  "frequencies": [
+    1,
+    2,
+    4
+  ],
+  "amplitudes": [
+    1.0,
+    0.5,
+    0.25
+  ],
+  "rays": 160,
+  "max_linearity_error": 2.6645352591003757e-15,
+  "max_hierarchy_error": 0.0,
+  "max_hierarchy_segments": 41,
+  "mean_hierarchy_segments": 22.25625,
+  "max_density_bound_violation": 0.0,
+  "all_tests_passed": true
+}

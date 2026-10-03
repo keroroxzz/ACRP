@@ -1,0 +1,145 @@
+{
+  "cumulonimbus_defaults": {
+    "uCbAnvil": 4.5,
+    "uCbAnvilDens": 1.05,
+    "uCbBaseR": 0.62,
+    "uCbBillowScale": 1.18,
+    "uCbCrown": 2.2,
+    "uCbDetailWarp": 0.23,
+    "uCbLean": 0.16,
+    "uCbMacroScale": 0.48,
+    "uCbMicro": 0.045,
+    "uCbRidge": 0.11,
+    "uCbTopR": 1.18,
+    "uCbWarp": 0.72,
+    "uCbX": 6.0,
+    "uCbZ": 9.0
+  },
+  "frames_per_scene": 3,
+  "gl_version": "3.3.0 NVIDIA 551.76",
+  "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+  "phase": "H0",
+  "production_defines": {
+    "A3_CAMF": 6,
+    "A3_CAMGL": 5,
+    "A3_SUNF": 4,
+    "A3_SUNGL": 4,
+    "BIG_STEP": 0.3,
+    "INSTRUMENT": 0,
+    "JITTER_ON": 1,
+    "MAXI": 1400,
+    "METHOD": 1,
+    "SMALL_STEP": 0.06,
+    "SUN_JITTER": 0.0,
+    "SUN_STEPS": 6
+  },
+  "reference_defines": {
+    "A3_CAMF": 6,
+    "A3_CAMGL": 5,
+    "A3_SUNF": 4,
+    "A3_SUNGL": 4,
+    "BIG_STEP": 0.25,
+    "INSTRUMENT": 0,
+    "JITTER_ON": 0,
+    "MAXI": 2400,
+    "METHOD": 1,
+    "SMALL_STEP": 0.03,
+    "SUN_JITTER": 0.0,
+    "SUN_STEPS": 12
+  },
+  "resolution": [
+    640,
+    360
+  ],
+  "scenes": [
+    {
+      "gpu_ms_samples": [
+        76.505088,
+        77.776896,
+        76.643328
+      ],
+      "max_ms": 77.776896,
+      "median_ms": 76.643328,
+      "min_ms": 76.505088,
+      "p95_ms": 77.66353919999999,
+      "rmse_vs_reference": 0.011127706617116928,
+      "scene": "sparse_wide"
+    },
+    {
+      "gpu_ms_samples": [
+        76.59008,
+        78.057472,
+        76.419072
+      ],
+      "max_ms": 78.057472,
+      "median_ms": 76.59008,
+      "min_ms": 76.419072,
+      "p95_ms": 77.9107328,
+      "rmse_vs_reference": 0.014284035190939903,
+      "scene": "low_up"
+    },
+    {
+      "gpu_ms_samples": [
+        58.499072,
+        59.24864,
+        60.694528
+      ],
+      "max_ms": 60.694528,
+      "median_ms": 59.24864,
+      "min_ms": 58.499072,
+      "p95_ms": 60.5499392,
+      "rmse_vs_reference": 0.014096277765929699,
+      "scene": "near_tower"
+    },
+    {
+      "gpu_ms_samples": [
+        14.334976,
+        13.956096,
+        14.296064
+      ],
+      "max_ms": 14.334976,
+      "median_ms": 14.296064,
+      "min_ms": 13.956096,
+      "p95_ms": 14.3310848,
+      "rmse_vs_reference": 0.005107119679450989,
+      "scene": "inside_proxy"
+    },
+    {
+      "gpu_ms_samples": [
+        51.846144,
+        51.318784,
+        51.659776
+      ],
+      "max_ms": 51.846144,
+      "median_ms": 51.659776,
+      "min_ms": 51.318784,
+      "p95_ms": 51.8275072,
+      "rmse_vs_reference": 0.008492962457239628,
+      "scene": "high_overcast_proxy"
+    },
+    {
+      "gpu_ms_samples": [
+        60.073984,
+        59.139072,
+        59.982848
+      ],
+      "max_ms": 60.073984,
+      "median_ms": 59.982848,
+      "min_ms": 59.139072,
+      "p95_ms": 60.064870400000004,
+      "rmse_vs_reference": 0.008330130018293858,
+      "scene": "grazing"
+    }
+  ],
+  "shader_path": "articles/7_hybrid_cloud_rendering/program/sky_frag.glsl",
+  "shader_sha256": "17248c1cd7331202aa4743428092f07c94b0774d17b4987839004512b17db34d",
+  "smoke": false,
+  "summary": {
+    "max_scene_median_ms": 76.643328,
+    "median_of_scene_medians_ms": 59.615744,
+    "min_scene_median_ms": 14.296064,
+    "p95_of_scene_medians_ms": 76.630016
+  },
+  "timestamp_local": "2026-07-25T18:54:03+0800",
+  "warmup_seconds_per_scene": 1.5
+}

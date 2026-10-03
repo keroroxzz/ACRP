@@ -1,0 +1,42 @@
+{
+  "phase": "H3",
+  "experiment": "presence-guided single-segment entry-exit refinement",
+  "timestamp_local": "2026-07-26T10:39:17+0800",
+  "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+  "resolution": [
+    320,
+    180
+  ],
+  "frames_per_scene": 3,
+  "shader_sha256": "eeda38a2a14e9b986855533a68210f9f25086b78966f86b8b5c270191d5ba8a6",
+  "macro_build_ms": 28.626944000000005,
+  "records": [
+    {
+      "scene": "sparse_wide",
+      "h1_median_ms": 9.772032,
+      "h3_median_ms": 10.921984,
+      "h3_p95_ms": 10.9247488,
+      "h1_rmse_vs_h0": 0.05277194455265999,
+      "h3_rmse_vs_h0": 0.050270047038793564,
+      "h1_mean_density_evals": 42.80531311035156,
+      "h3_mean_density_evals": 42.81807327270508,
+      "h3_eval_multiplier_vs_h1": 1.000298097629157
+    },
+    {
+      "scene": "low_up",
+      "h1_median_ms": 7.556096,
+      "h3_median_ms": 9.403392,
+      "h3_p95_ms": 9.4181376,
+      "h1_rmse_vs_h0": 0.038806281983852386,
+      "h3_rmse_vs_h0": 0.036245040595531464,
+      "h1_mean_density_evals": 33.37739562988281,
+      "h3_mean_density_evals": 33.37763977050781,
+      "h3_eval_multiplier_vs_h1": 1.000007314549874
+    }
+  ],
+  "gates": {
+    "rmse_improves_all_scenes": true,
+    "density_eval_overhead_under_25pct": true,
+    "gpu_time_overhead_under_25pct": true
+  }
+}

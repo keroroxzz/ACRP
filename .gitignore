@@ -1,0 +1,13 @@
+## files
+*.pdf
+*.tex
+
+## images
+*.png
+*.jpg
+*.bmp
+
+## cache / result
+*.pyc
+*.npy
+*.csv

@@ -1,0 +1,394 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-02T07:43:29+0800",
+    "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+    "opengl": "4.3.0 NVIDIA 580.142",
+    "resolution": [
+      810,
+      459
+    ],
+    "frames": 7,
+    "factor_semantics": "N per axis, N^2 pixels",
+    "variant_definitions": {
+      "full": {
+        "levels": 1
+      },
+      "custom": {
+        "levels": 3,
+        "factor": 3,
+        "threshold": 0.04,
+        "radius": 1
+      }
+    },
+    "reference": "same PSMS Next_2 shader shaded at every final-resolution pixel; NOT converged transport",
+    "timing": "GL_TIME_ELAPSED entire cascade, rotated variant order each repetition; excludes readback",
+    "quality_gate": {
+      "max_rmse": 0.005,
+      "min_ssim": 0.99,
+      "max_bad_pixel_fraction_003": 0.01
+    },
+    "hashes": {
+      "baseline_psms.glsl": "d9a6fd0f9ff3153eb99d0d652b2b399ec83a97c78b20257424452d0d1dfda6c1",
+      "cascade.py": "11f139c991e8444c7fa160f5e069304d29b7a13ea545fcf47ed83e76b4990532",
+      "reconstruct.frag": "7682b95ae13133ab97ed9038dc8d000733ac78f99878bc9a9f30c35f60fc69ea",
+      "stencil.frag": "70937fe8b66b5538678275d0ccc2826ea2da86787fbf069498cc3769c6341778",
+      "benchmark.py": "c783832070e07e99f3dfaee99f13c915802d23f30465d1c3cac6658f9d33883a"
+    },
+    "visual_variant": "custom",
+    "python": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:29:18) [GCC 11.2.0]",
+    "numpy": "2.2.6"
+  },
+  "records": [
+    {
+      "scene": {
+        "name": "A-g",
+        "label": "ground,up",
+        "camera": [
+          57500.0,
+          57500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 6.470656,
+          "p95_ms": 6.5026048,
+          "samples_ms": [
+            6.470656,
+            6.475776,
+            6.43584,
+            6.491136,
+            6.371328,
+            6.50752,
+            6.398976
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  810,
+                  459
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "custom": {
+          "median_ms": 5.111808,
+          "p95_ms": 5.13024,
+          "samples_ms": [
+            5.111808,
+            5.122048,
+            4.9152,
+            4.926464,
+            5.123072,
+            5.133312,
+            5.075968
+          ],
+          "speedup": 1.2658253205128205,
+          "quality": {
+            "rmse": 0.002298463938543075,
+            "psnr_db": 52.77124611336248,
+            "ssim_luma": 0.9972478967530487,
+            "edge_gradient_rmse": 0.0016505941662528028,
+            "edge_region_rmse": 0.0056758802565079315,
+            "p99_abs_rgb": 0.013371796607971165,
+            "bad_pixel_fraction_003": 0.0016138142499798273,
+            "max_abs_rgb": 0.07725787162780762,
+            "hdr_relative_rmse": 0.011391211301088333
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  90,
+                  51
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  270,
+                  153
+                ],
+                "shaded_fraction": 0.24052287581699347
+              },
+              {
+                "size": [
+                  810,
+                  459
+                ],
+                "shaded_fraction": 0.08165093197772937
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.12072137496974099
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "B-t",
+        "label": "high,down",
+        "camera": [
+          57500.0,
+          22500.0,
+          9000.0
+        ],
+        "bias": -0.35,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 8.24832,
+          "p95_ms": 8.4955136,
+          "samples_ms": [
+            7.970816,
+            8.517632,
+            8.443904,
+            8.262656,
+            8.095744,
+            8.23808,
+            8.24832
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  810,
+                  459
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "custom": {
+          "median_ms": 9.380864,
+          "p95_ms": 9.655808,
+          "samples_ms": [
+            9.069568,
+            9.460736,
+            9.380864,
+            9.3696,
+            9.675776,
+            9.299968,
+            9.609216
+          ],
+          "speedup": 0.8792708219626677,
+          "quality": {
+            "rmse": 0.0015310347854808131,
+            "psnr_db": 56.30029883827845,
+            "ssim_luma": 0.9988576132185917,
+            "edge_gradient_rmse": 0.0015587422368841732,
+            "edge_region_rmse": 0.0016046281795822296,
+            "p99_abs_rgb": 0.007169290184974635,
+            "bad_pixel_fraction_003": 0.00065359477124183,
+            "max_abs_rgb": 0.2421250343322754,
+            "hdr_relative_rmse": 0.012712325900793076
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  90,
+                  51
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  270,
+                  153
+                ],
+                "shaded_fraction": 0.8324134592108449
+              },
+              {
+                "size": [
+                  810,
+                  459
+                ],
+                "shaded_fraction": 0.5718254928857689
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.6766615562548751
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "sky-day",
+        "label": "Atmosphere only",
+        "camera": [
+          57500,
+          22500,
+          0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0,
+          0.9396926207859084,
+          0.3420201433256687
+        ],
+        "sky_only": true,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 1.370112,
+          "p95_ms": 1.3768704,
+          "samples_ms": [
+            1.364992,
+            1.368064,
+            1.369088,
+            1.370112,
+            1.370112,
+            1.379328,
+            1.371136
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  810,
+                  459
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "custom": {
+          "median_ms": 0.287744,
+          "p95_ms": 0.2922496,
+          "samples_ms": [
+            0.283648,
+            0.280576,
+            0.292864,
+            0.289792,
+            0.280576,
+            0.290816,
+            0.287744
+          ],
+          "speedup": 4.761565836298932,
+          "quality": {
+            "rmse": 0.0001519110441879064,
+            "psnr_db": 76.36821302103178,
+            "ssim_luma": 0.9999960099673653,
+            "edge_gradient_rmse": 4.9706871675131274e-05,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0009247130155563346,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.001350998878479004,
+            "hdr_relative_rmse": 0.0005829212605021894
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  90,
+                  51
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  270,
+                  153
+                ],
+                "shaded_fraction": 0.08278867102396514
+              },
+              {
+                "size": [
+                  810,
+                  459
+                ],
+                "shaded_fraction": 0.02074558218349068
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.042290002420721375
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "full": {
+      "mean_ms": 5.363029333333333,
+      "aggregate_speedup": 1.0,
+      "min_scene_speedup": 1.0,
+      "mean_rmse": 0.0,
+      "worst_rmse": 0.0,
+      "min_ssim": 1.0,
+      "worst_bad_pixel_fraction": 0.0,
+      "mean_shading_fraction": 1.0,
+      "quality_gate_pass": true
+    },
+    "custom": {
+      "mean_ms": 4.926805333333333,
+      "aggregate_speedup": 1.0885409449909935,
+      "min_scene_speedup": 0.8792708219626677,
+      "mean_rmse": 0.0013271365894039315,
+      "worst_rmse": 0.002298463938543075,
+      "min_ssim": 0.9972478967530487,
+      "worst_bad_pixel_fraction": 0.0016138142499798273,
+      "mean_shading_fraction": 0.27989097788177913,
+      "quality_gate_pass": true
+    }
+  }
+}

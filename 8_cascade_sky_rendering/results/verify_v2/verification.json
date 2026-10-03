@@ -1,0 +1,430 @@
+{
+  "hashes": {
+    "v2.py": "bc5d60f934ca5cfa4f94cc37949788db1910d518b57ff007ff8db12860a61f4c",
+    "v2_sources.py": "3c48ae563a3ee88c3d1511ad50a1e16b661b100fedcb0b3a318bd64c7bfe015c",
+    "single_frame_v2.py": "42590326f38a225f9f9c9734ce89c639860339b85ba07db9386d90c075a272f8",
+    "benchmark.py": "130f5163ea8e896ea1c055641667eb275436602516dbd9573f28450b122a77fe",
+    "verify_v2.py": "de9ff3ea308cc69f31d1e6f00eb069b11bde865c7528658f26a781e52fc5c045",
+    "single_frame.py": "977fd9539fd0f951a6a2785a4fd68bfec4c2dc2b3066ef163d06f1b588863f3c",
+    "optimized_sources.py": "56ef3bb7abcd01e6b783e2cf7086fc268f934daf4d68a3b220a2c0761f488b92",
+    "cascade.py": "52695ede97cecd330e5b7cfce24b86fd4d91dbe2447e805e36082a749e8b47aa",
+    "baseline_psms.glsl": "d9a6fd0f9ff3153eb99d0d652b2b399ec83a97c78b20257424452d0d1dfda6c1",
+    "parent_score.frag": "968309de7985fb36616dcf804172c472bf1f4545e7fa2c398924ba6562f65f88",
+    "scored_reconstruct.frag": "fc906c130f526c0ee772051660705ab65638461d71d7f51d52cadc1acec30486",
+    "cubic_reconstruct.frag": "a387943469eb67349d50393b3f2a083ccf6f803a17c1772b73034bb36d9711b2",
+    "reconstruct.frag": "7682b95ae13133ab97ed9038dc8d000733ac78f99878bc9a9f30c35f60fc69ea",
+    "stencil.frag": "70937fe8b66b5538678275d0ccc2826ea2da86787fbf069498cc3769c6341778"
+  },
+  "cases": [
+    {
+      "scene": {
+        "camera": [
+          25000,
+          0,
+          0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0,
+          0.9998477,
+          0.0174524
+        ],
+        "itime": 10
+      },
+      "variants": {
+        "bounds": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "opaque": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "combined": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "lazy": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "lazy-bounds": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        }
+      }
+    },
+    {
+      "scene": {
+        "camera": [
+          -43000,
+          17500,
+          1200
+        ],
+        "bias": -0.4,
+        "sun": [
+          0.6,
+          0.7998,
+          0.01745
+        ],
+        "itime": 37.9
+      },
+      "variants": {
+        "bounds": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "opaque": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "combined": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "lazy": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "lazy-bounds": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        }
+      }
+    },
+    {
+      "scene": {
+        "camera": [
+          250000,
+          -330000,
+          2700
+        ],
+        "bias": -0.5,
+        "sun": [
+          0,
+          0.9998477,
+          -0.0174524
+        ],
+        "itime": 83.3
+      },
+      "variants": {
+        "bounds": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "opaque": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "combined": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "lazy": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        },
+        "lazy-bounds": {
+          "max_hdr": 0.0,
+          "display_rmse": 0.0,
+          "bit_identical": true
+        }
+      }
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+  "resolution": [
+    801,
+    451
+  ],
+  "cold_warm_bit_identical": true,
+  "queue_checks": [
+    {
+      "force": -1,
+      "group": 0,
+      "max_hdr": 0.0
+    },
+    {
+      "force": -1,
+      "group": 32,
+      "max_hdr": 0.0,
+      "queued_pixels": 0
+    },
+    {
+      "force": -1,
+      "group": 64,
+      "max_hdr": 0.0,
+      "queued_pixels": 0
+    },
+    {
+      "force": -1,
+      "group": 128,
+      "max_hdr": 0.0,
+      "queued_pixels": 0
+    },
+    {
+      "force": 0,
+      "group": 0,
+      "max_hdr": 5.960464477539063e-08
+    },
+    {
+      "force": 0,
+      "group": 32,
+      "max_hdr": 5.960464477539063e-08,
+      "queued_pixels": 50348
+    },
+    {
+      "force": 0,
+      "group": 64,
+      "max_hdr": 5.960464477539063e-08,
+      "queued_pixels": 50348
+    },
+    {
+      "force": 0,
+      "group": 128,
+      "max_hdr": 5.960464477539063e-08,
+      "queued_pixels": 50348
+    },
+    {
+      "force": 1,
+      "group": 0,
+      "max_hdr": 5.960464477539063e-08
+    },
+    {
+      "force": 1,
+      "group": 32,
+      "max_hdr": 5.960464477539063e-08,
+      "queued_pixels": 361251
+    },
+    {
+      "force": 1,
+      "group": 64,
+      "max_hdr": 5.960464477539063e-08,
+      "queued_pixels": 361251
+    },
+    {
+      "force": 1,
+      "group": 128,
+      "max_hdr": 5.960464477539063e-08,
+      "queued_pixels": 361251
+    }
+  ],
+  "A_B_A_bit_identical": true,
+  "selected_checks": [
+    {
+      "scene": "case0",
+      "resolution": [
+        801,
+        451
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "case1",
+      "resolution": [
+        801,
+        451
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "case2",
+      "resolution": [
+        801,
+        451
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "case0",
+      "resolution": [
+        160,
+        90
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "case1",
+      "resolution": [
+        160,
+        90
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "case2",
+      "resolution": [
+        160,
+        90
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "A-g",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "A-h",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "A-t",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "B-g",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "B-h",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "B-t",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "preset-back",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "preset-side",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "preset-front",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "postset-back",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "postset-side",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "postset-front",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "sky-day",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    },
+    {
+      "scene": "sky-twilight",
+      "resolution": [
+        2560,
+        1440
+      ],
+      "bit_identical": true,
+      "max_hdr": 0.0,
+      "display_rmse": 0.0
+    }
+  ],
+  "pass": true
+}

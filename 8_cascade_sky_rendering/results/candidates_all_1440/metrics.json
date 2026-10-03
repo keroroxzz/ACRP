@@ -1,0 +1,1441 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-02T08:16:38+0800",
+    "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+    "opengl": "4.3.0 NVIDIA 580.142",
+    "resolution": [
+      2560,
+      1440
+    ],
+    "frames": 5,
+    "factor_semantics": "N per axis, N^2 pixels",
+    "variant_definitions": {
+      "full": {
+        "levels": 1
+      },
+      "candidates-N4": {
+        "candidates": true,
+        "levels": 2,
+        "factor": 4,
+        "threshold": 0.04
+      }
+    },
+    "reference": "same PSMS Next_2 shader shaded at every final-resolution pixel; NOT converged transport",
+    "timing": "GL_TIME_ELAPSED entire cascade, rotated variant order each repetition; excludes readback",
+    "quality_gate": {
+      "max_rmse": 0.005,
+      "min_ssim": 0.99,
+      "max_bad_pixel_fraction_003": 0.01
+    },
+    "hashes": {
+      "baseline_psms.glsl": "d9a6fd0f9ff3153eb99d0d652b2b399ec83a97c78b20257424452d0d1dfda6c1",
+      "cascade.py": "11f139c991e8444c7fa160f5e069304d29b7a13ea545fcf47ed83e76b4990532",
+      "reconstruct.frag": "7682b95ae13133ab97ed9038dc8d000733ac78f99878bc9a9f30c35f60fc69ea",
+      "stencil.frag": "70937fe8b66b5538678275d0ccc2826ea2da86787fbf069498cc3769c6341778",
+      "benchmark.py": "eb392c6987778bd029ed9137f85b30154d2a82784e7c63b11b74169530073a39",
+      "fast.py": "65b32cb07c5277f9f071220026867455842fbcf88385979bd88aad2b94a99e83",
+      "curvature.frag": "4d9699c7d3c7ca7b702840f8f58fb09d8357cadbfeec3ccf4ac993ccb933347e"
+    },
+    "visual_variant": "candidates-N4",
+    "python": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:29:18) [GCC 11.2.0]",
+    "numpy": "2.2.6"
+  },
+  "records": [
+    {
+      "scene": {
+        "name": "A-g",
+        "label": "ground,up",
+        "camera": [
+          57500.0,
+          57500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 50.043904,
+          "p95_ms": 50.6642432,
+          "samples_ms": [
+            50.043904,
+            49.91488,
+            49.849344,
+            50.167808,
+            50.788352
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 6.11328,
+          "p95_ms": 6.3952896,
+          "samples_ms": [
+            6.464512,
+            5.883904,
+            6.1184,
+            6.11328,
+            5.961728
+          ],
+          "speedup": 8.186097152428811,
+          "quality": {
+            "rmse": 0.0013556307335509128,
+            "psnr_db": 57.35717187635872,
+            "ssim_luma": 0.9987853136398686,
+            "edge_gradient_rmse": 0.001048177052991304,
+            "edge_region_rmse": 0.004353480109357113,
+            "p99_abs_rgb": 0.00853908181190488,
+            "bad_pixel_fraction_003": 0.00012396918402777778,
+            "max_abs_rgb": 0.07915258407592773,
+            "hdr_relative_rmse": 0.006956353783607483
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.032172309027777776
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.09467230902777778
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "A-h",
+        "label": "in-layer,level",
+        "camera": [
+          57500.0,
+          57500.0,
+          500.0
+        ],
+        "bias": 0.02,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 56.245248,
+          "p95_ms": 56.3243008,
+          "samples_ms": [
+            56.235008,
+            56.271872,
+            56.216576,
+            56.337408,
+            56.245248
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 6.262784,
+          "p95_ms": 6.3369216,
+          "samples_ms": [
+            6.052864,
+            6.262784,
+            6.197248,
+            6.339584,
+            6.326272
+          ],
+          "speedup": 8.980869849574885,
+          "quality": {
+            "rmse": 0.0010765751761694072,
+            "psnr_db": 59.35911276863323,
+            "ssim_luma": 0.9991376624737723,
+            "edge_gradient_rmse": 0.0010772175541420973,
+            "edge_region_rmse": 0.0027868576347387444,
+            "p99_abs_rgb": 0.005998254418373095,
+            "bad_pixel_fraction_003": 5.208333333333334e-05,
+            "max_abs_rgb": 0.07164901494979858,
+            "hdr_relative_rmse": 0.006530175916850567
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.021885850694444445
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.08438585069444444
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "A-t",
+        "label": "high,down",
+        "camera": [
+          57500.0,
+          57500.0,
+          9000.0
+        ],
+        "bias": -0.35,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 52.55168,
+          "p95_ms": 52.5907968,
+          "samples_ms": [
+            52.511744,
+            52.58752,
+            52.55168,
+            52.489216,
+            52.591616
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 21.097472,
+          "p95_ms": 21.106688,
+          "samples_ms": [
+            21.097472,
+            21.102592,
+            21.107712,
+            21.018624,
+            21.050368
+          ],
+          "speedup": 2.4908993835849147,
+          "quality": {
+            "rmse": 0.0016997699771589875,
+            "psnr_db": 55.39219691843012,
+            "ssim_luma": 0.9980818993310309,
+            "edge_gradient_rmse": 0.0017632257485439206,
+            "edge_region_rmse": 0.0012542370201733956,
+            "p99_abs_rgb": 0.011654556393623339,
+            "bad_pixel_fraction_003": 0.001196560329861111,
+            "max_abs_rgb": 0.2870784401893616,
+            "hdr_relative_rmse": 0.009023318998515606
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.586533203125
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.649033203125
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "B-g",
+        "label": "ground,up",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 82.291712,
+          "p95_ms": 82.7103232,
+          "samples_ms": [
+            82.087936,
+            82.193408,
+            82.390016,
+            82.291712,
+            82.7904
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 13.366272,
+          "p95_ms": 13.637632,
+          "samples_ms": [
+            13.32736,
+            13.305856,
+            13.70112,
+            13.366272,
+            13.38368
+          ],
+          "speedup": 6.156668964988891,
+          "quality": {
+            "rmse": 0.0014495020543042758,
+            "psnr_db": 56.775623296108904,
+            "ssim_luma": 0.9986220918281796,
+            "edge_gradient_rmse": 0.0012838398171348422,
+            "edge_region_rmse": 0.0023773006932387613,
+            "p99_abs_rgb": 0.00863879919052124,
+            "bad_pixel_fraction_003": 0.0001681857638888889,
+            "max_abs_rgb": 0.1583106517791748,
+            "hdr_relative_rmse": 0.008349865674972534
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.10430338541666667
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.16680338541666667
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "B-h",
+        "label": "in-layer,level",
+        "camera": [
+          57500.0,
+          22500.0,
+          2500.0
+        ],
+        "bias": 0.02,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 68.01408,
+          "p95_ms": 68.091904,
+          "samples_ms": [
+            68.067328,
+            67.93728,
+            68.01408,
+            68.098048,
+            67.919872
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 20.91008,
+          "p95_ms": 21.0464768,
+          "samples_ms": [
+            21.014528,
+            20.641792,
+            21.054464,
+            20.91008,
+            20.72064
+          ],
+          "speedup": 3.2526934378060726,
+          "quality": {
+            "rmse": 0.0020233187730127602,
+            "psnr_db": 53.878713778551685,
+            "ssim_luma": 0.9972792949302762,
+            "edge_gradient_rmse": 0.0019432203531858272,
+            "edge_region_rmse": 0.002009755567244115,
+            "p99_abs_rgb": 0.013390421867370605,
+            "bad_pixel_fraction_003": 0.0005170355902777778,
+            "max_abs_rgb": 0.21165615320205688,
+            "hdr_relative_rmse": 0.012686285190284252
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.24696723090277778
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.3094672309027778
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "B-t",
+        "label": "high,down",
+        "camera": [
+          57500.0,
+          22500.0,
+          9000.0
+        ],
+        "bias": -0.35,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 58.377216,
+          "p95_ms": 58.5689088,
+          "samples_ms": [
+            58.377216,
+            58.151936,
+            58.377216,
+            58.616832,
+            58.322944
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 24.656896,
+          "p95_ms": 24.803328,
+          "samples_ms": [
+            24.758272,
+            24.59136,
+            24.656896,
+            24.631296,
+            24.814592
+          ],
+          "speedup": 2.367581710203912,
+          "quality": {
+            "rmse": 0.0017553145149004038,
+            "psnr_db": 55.11290111846118,
+            "ssim_luma": 0.9981265182732929,
+            "edge_gradient_rmse": 0.0018022888657849236,
+            "edge_region_rmse": 0.0020562724631454283,
+            "p99_abs_rgb": 0.011657419800758295,
+            "bad_pixel_fraction_003": 0.0012543402777777778,
+            "max_abs_rgb": 0.3286714553833008,
+            "hdr_relative_rmse": 0.00890998262912035
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.5092730034722223
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.5717730034722223
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "preset-back",
+        "label": "presunset back-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.0,
+          0.9975640502598242,
+          0.0697564737441253
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 84.902912,
+          "p95_ms": 85.2533248,
+          "samples_ms": [
+            85.255168,
+            84.902912,
+            84.888576,
+            84.726784,
+            85.245952
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 14.313472,
+          "p95_ms": 14.4766976,
+          "samples_ms": [
+            14.496768,
+            14.280704,
+            14.252032,
+            14.396416,
+            14.313472
+          ],
+          "speedup": 5.931678351695521,
+          "quality": {
+            "rmse": 0.0012768660833577963,
+            "psnr_db": 57.87709297577295,
+            "ssim_luma": 0.9989317557359746,
+            "edge_gradient_rmse": 0.0011563142182452722,
+            "edge_region_rmse": 0.002100382888935824,
+            "p99_abs_rgb": 0.00813168466091152,
+            "bad_pixel_fraction_003": 0.00011773003472222222,
+            "max_abs_rgb": 0.1556086540222168,
+            "hdr_relative_rmse": 0.007856289856135845
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.10311631944444444
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.16561631944444444
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "preset-side",
+        "label": "presunset side-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.9975640502598242,
+          6.108318105475815e-17,
+          0.0697564737441253
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 91.814912,
+          "p95_ms": 92.8106496,
+          "samples_ms": [
+            92.0832,
+            91.597824,
+            92.992512,
+            91.814912,
+            91.805696
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 15.200256,
+          "p95_ms": 15.5693056,
+          "samples_ms": [
+            15.382528,
+            15.200256,
+            15.149056,
+            15.11936,
+            15.616
+          ],
+          "speedup": 6.040353004580976,
+          "quality": {
+            "rmse": 0.0012629272020308862,
+            "psnr_db": 57.97243364871071,
+            "ssim_luma": 0.9990119606564672,
+            "edge_gradient_rmse": 0.001073699773388048,
+            "edge_region_rmse": 0.002165147192877445,
+            "p99_abs_rgb": 0.007903755307197557,
+            "bad_pixel_fraction_003": 0.0001123046875,
+            "max_abs_rgb": 0.13413161039352417,
+            "hdr_relative_rmse": 0.007508251816034317
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.09798394097222222
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.1604839409722222
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "preset-front",
+        "label": "presunset front-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          1.221663621095163e-16,
+          -0.9975640502598242,
+          0.0697564737441253
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 98.6624,
+          "p95_ms": 98.8913664,
+          "samples_ms": [
+            98.6624,
+            98.942976,
+            98.684928,
+            97.875968,
+            97.854464
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 16.991232,
+          "p95_ms": 17.1984896,
+          "samples_ms": [
+            16.991232,
+            16.714752,
+            17.10592,
+            17.221632,
+            16.965632
+          ],
+          "speedup": 5.8066654613391195,
+          "quality": {
+            "rmse": 0.0013940931290950685,
+            "psnr_db": 57.11416426505959,
+            "ssim_luma": 0.9986800915625018,
+            "edge_gradient_rmse": 0.0012757063552151881,
+            "edge_region_rmse": 0.002574539628551689,
+            "p99_abs_rgb": 0.0078621506690979,
+            "bad_pixel_fraction_003": 0.00011203342013888889,
+            "max_abs_rgb": 0.16657203435897827,
+            "hdr_relative_rmse": 0.008256915025413036
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.10907335069444445
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.17157335069444443
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "postset-back",
+        "label": "postsunset back-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.0,
+          0.9998476951563913,
+          -0.01745240643728351
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 83.895296,
+          "p95_ms": 83.939328,
+          "samples_ms": [
+            83.668992,
+            83.848192,
+            83.948544,
+            83.902464,
+            83.895296
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 12.572672,
+          "p95_ms": 12.803072,
+          "samples_ms": [
+            12.572672,
+            12.121088,
+            12.59008,
+            12.85632,
+            12.418048
+          ],
+          "speedup": 6.672829451050659,
+          "quality": {
+            "rmse": 0.0008460574377645562,
+            "psnr_db": 61.45200304519018,
+            "ssim_luma": 0.9998272150457463,
+            "edge_gradient_rmse": 0.0004503938625994386,
+            "edge_region_rmse": 0.005298838194026199,
+            "p99_abs_rgb": 0.004424721300601953,
+            "bad_pixel_fraction_003": 7.676866319444445e-05,
+            "max_abs_rgb": 0.2911732792854309,
+            "hdr_relative_rmse": 0.00651544239372015
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.05629123263888889
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.11879123263888888
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "postset-side",
+        "label": "postsunset side-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.9998476951563913,
+          6.122301397540666e-17,
+          -0.01745240643728351
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 92.857344,
+          "p95_ms": 93.0455552,
+          "samples_ms": [
+            92.818432,
+            93.02016,
+            92.675072,
+            92.857344,
+            93.051904
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 11.940864,
+          "p95_ms": 12.151808,
+          "samples_ms": [
+            12.193792,
+            11.938816,
+            11.819008,
+            11.940864,
+            11.983872
+          ],
+          "speedup": 7.776434268073064,
+          "quality": {
+            "rmse": 0.000809965853717891,
+            "psnr_db": 61.83066579167349,
+            "ssim_luma": 0.9998037686922809,
+            "edge_gradient_rmse": 0.00045640285634801595,
+            "edge_region_rmse": 0.004614309866710779,
+            "p99_abs_rgb": 0.004713923037052148,
+            "bad_pixel_fraction_003": 9.440104166666666e-05,
+            "max_abs_rgb": 0.1781580150127411,
+            "hdr_relative_rmse": 0.006188985891640186
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.04698784722222222
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.10948784722222223
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "postset-front",
+        "label": "postsunset front-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          1.2244602795081332e-16,
+          -0.9998476951563913,
+          -0.01745240643728351
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 95.804416,
+          "p95_ms": 96.5265408,
+          "samples_ms": [
+            95.736832,
+            96.060416,
+            96.643072,
+            95.685632,
+            95.804416
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 13.589504,
+          "p95_ms": 13.993984000000001,
+          "samples_ms": [
+            13.589504,
+            13.29152,
+            13.867008,
+            14.025728,
+            13.37856
+          ],
+          "speedup": 7.049883203978601,
+          "quality": {
+            "rmse": 0.0008207487131733707,
+            "psnr_db": 61.71579579030062,
+            "ssim_luma": 0.9998084118991011,
+            "edge_gradient_rmse": 0.00044880536924365706,
+            "edge_region_rmse": 0.004602313041452805,
+            "p99_abs_rgb": 0.004621120393276168,
+            "bad_pixel_fraction_003": 0.00011311848958333333,
+            "max_abs_rgb": 0.15364263951778412,
+            "hdr_relative_rmse": 0.0061879209242761135
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.05563585069444445
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.11813585069444445
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "sky-day",
+        "label": "Atmosphere only",
+        "camera": [
+          57500,
+          22500,
+          0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0,
+          0.9396926207859084,
+          0.3420201433256687
+        ],
+        "sky_only": true,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 13.233152,
+          "p95_ms": 13.234176,
+          "samples_ms": [
+            13.215744,
+            13.234176,
+            13.234176,
+            13.233152,
+            13.221888
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 1.107968,
+          "p95_ms": 1.3432832,
+          "samples_ms": [
+            1.107968,
+            1.098752,
+            1.352704,
+            1.096704,
+            1.3056
+          ],
+          "speedup": 11.94362292051756,
+          "quality": {
+            "rmse": 1.4150715128917477e-05,
+            "psnr_db": 96.9844322364407,
+            "ssim_luma": 0.9999999610577252,
+            "edge_gradient_rmse": 6.017316980260282e-06,
+            "edge_region_rmse": 3.164733553897646e-07,
+            "p99_abs_rgb": 0.0001061558723449707,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.00027167797088623047,
+            "hdr_relative_rmse": 0.00032067071879282594
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.00888454861111111
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.07138454861111111
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "sky-twilight",
+        "label": "Atmosphere only",
+        "camera": [
+          57500,
+          22500,
+          0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0,
+          0.9998476951563913,
+          -0.01745240643728351
+        ],
+        "sky_only": true,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 11.8784,
+          "p95_ms": 11.8996992,
+          "samples_ms": [
+            11.875328,
+            11.853824,
+            11.886592,
+            11.902976,
+            11.8784
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          }
+        },
+        "candidates-N4": {
+          "median_ms": 1.089536,
+          "p95_ms": 1.0921984,
+          "samples_ms": [
+            1.089536,
+            1.088512,
+            1.088512,
+            1.09056,
+            1.092608
+          ],
+          "speedup": 10.902255639097744,
+          "quality": {
+            "rmse": 0.0003214379038703069,
+            "psnr_db": 69.85805825331319,
+            "ssim_luma": 0.9999710039050276,
+            "edge_gradient_rmse": 0.0001568273365252355,
+            "edge_region_rmse": 0.0001092284522847885,
+            "p99_abs_rgb": 0.000667825490236279,
+            "bad_pixel_fraction_003": 1.46484375e-05,
+            "max_abs_rgb": 0.03288614749908447,
+            "hdr_relative_rmse": 0.0036033608485013247
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  640,
+                  360
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  2560,
+                  1440
+                ],
+                "shaded_fraction": 0.013541666666666667
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.07604166666666666
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "full": {
+      "mean_ms": 67.18376228571428,
+      "aggregate_speedup": 1.0,
+      "min_scene_speedup": 1.0,
+      "mean_rmse": 0.0,
+      "worst_rmse": 0.0,
+      "min_ssim": 1.0,
+      "worst_bad_pixel_fraction": 0.0,
+      "mean_shading_fraction": 1.0,
+      "quality_gate_pass": true
+    },
+    "candidates-N4": {
+      "mean_ms": 12.800877714285715,
+      "aggregate_speedup": 5.248371540237241,
+      "min_scene_speedup": 2.367581710203912,
+      "mean_rmse": 0.0011504541619453957,
+      "worst_rmse": 0.0020233187730127602,
+      "min_ssim": 0.9972792949302762,
+      "worst_bad_pixel_fraction": 0.0012543402777777778,
+      "mean_shading_fraction": 0.2048321242559524,
+      "quality_gate_pass": true
+    }
+  }
+}

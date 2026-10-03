@@ -1,0 +1,28 @@
+[
+ {
+  "label": "round 1: gather interpolation + aerial steps",
+  "date": "2026-07-29 08:15",
+  "resolution": [
+   2560,
+   1440
+  ],
+  "baseline": "../shader_HSE_PSMS_Next.glsl",
+  "baseline_ms": 1518.65,
+  "total_ms": 996.97,
+  "gain_vs_baseline_pct": 34.35,
+  "per_config": {
+   "A-g": 56.36,
+   "A-h": 63.81,
+   "A-t": 56.03,
+   "B-g": 93.28,
+   "B-h": 72.92,
+   "B-t": 59.79,
+   "preset-back": 90.03,
+   "preset-side": 99.5,
+   "preset-front": 110.17,
+   "postset-back": 93.32,
+   "postset-side": 102.11,
+   "postset-front": 99.65
+  }
+ }
+]

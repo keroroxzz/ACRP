@@ -1,0 +1,55 @@
+{
+  "method": "Maximum 320x320 local MSE of the lowest-error >=10x candidate, from quantized PNGs; same box for all variants",
+  "columns": [
+    "full",
+    "v2",
+    "L2-N4-T0.05",
+    "L2-N4-T0.07",
+    "L2-N4-T0.16",
+    "L2-N4-T0.32"
+  ],
+  "scenes": {
+    "A-g": {
+      "x": 1224,
+      "y": 906,
+      "width": 320,
+      "height": 320,
+      "selection_image": "L2-N4-T0.16"
+    },
+    "A-t": {
+      "x": 704,
+      "y": 529,
+      "width": 320,
+      "height": 320,
+      "selection_image": "L2-N4-T0.16"
+    },
+    "B-t": {
+      "x": 1203,
+      "y": 502,
+      "width": 320,
+      "height": 320,
+      "selection_image": "L2-N4-T0.16"
+    },
+    "B-h": {
+      "x": 1062,
+      "y": 743,
+      "width": 320,
+      "height": 320,
+      "selection_image": "L2-N4-T0.16"
+    },
+    "preset-front": {
+      "x": 0,
+      "y": 906,
+      "width": 320,
+      "height": 320,
+      "selection_image": "L2-N4-T0.16"
+    },
+    "postset-side": {
+      "x": 58,
+      "y": 906,
+      "width": 320,
+      "height": 320,
+      "selection_image": "L2-N4-T0.16"
+    }
+  }
+}

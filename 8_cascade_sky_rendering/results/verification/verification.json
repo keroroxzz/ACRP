@@ -1,0 +1,44 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+  "resolution": [
+    161,
+    91
+  ],
+  "force_all_N2_max_abs_hdr": 0.0,
+  "force_none_N2_max_abs_hdr": 4.659642137416764e-07,
+  "force_all_N3_max_abs_hdr": 0.0,
+  "force_none_N3_max_abs_hdr": 2.060664505143528e-07,
+  "original_glsl330_vs_wrapper_display_rmse": 3.6189368984196335e-05,
+  "unseen_feature_counterexample": {
+    "expected_failure": true,
+    "max_abs_hdr": 1.0,
+    "work": {
+      "levels": [
+        {
+          "size": [
+            41,
+            23
+          ],
+          "shaded_fraction": 1.0
+        },
+        {
+          "size": [
+            81,
+            46
+          ],
+          "shaded_fraction": 0.0
+        },
+        {
+          "size": [
+            161,
+            91
+          ],
+          "shaded_fraction": 0.0
+        }
+      ],
+      "full_resolution_equivalent_shading": 0.06436420722135008
+    },
+    "explanation": "The base image misses a one-pixel feature; its zero gradient never requests refinement."
+  },
+  "invariants_pass": true
+}

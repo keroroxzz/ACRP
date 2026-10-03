@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8">
+<title>單張體積雲原尺寸比較</title><style>
+body{background:#181a20;color:#eee;font:16px system-ui;margin:20px}button,select{font:inherit;margin:4px;padding:6px}
+#viewport{height:76vh;overflow:auto;border:1px solid #777}#picture{display:block;max-width:none}
+.active{background:#90c6f2}p{max-width:1000px}#label{font-weight:bold}
+</style><h1>單張體積雲原尺寸比較</h1>
+<p>影像預設以一個影像像素對一個 CSS 像素顯示。可捲動檢查細節；瀏覽器與螢幕縮放仍會影響實際顯示。
+按 1、2、3、4 切換完整基準、原階層、V2、V1。肉眼判讀不能由縮小總覽或 SSIM 取代。</p>
+<select id="scene"></select><button data-mode="full">1 完整基準</button><button data-mode="anchor">2 原階層</button>
+<button data-mode="cascade">3 V2</button><button data-mode="v1">4 V1</button><button id="blink">完整基準／本次版本交替</button>
+<button id="fit">切換符合寬度／原尺寸</button><p id="label"></p><div id="viewport"><img id="picture"></div>
+<script>const names=["heldout-A-g", "heldout-A-h", "heldout-A-t", "heldout-B-g", "heldout-B-h", "heldout-B-t", "heldout-preset-back", "heldout-preset-side", "heldout-preset-front", "heldout-postset-back", "heldout-postset-side", "heldout-postset-front"];let mode='cascade',timer=null,fit=false;
+const scene=document.getElementById('scene'),picture=document.getElementById('picture');
+names.forEach(n=>scene.add(new Option(n,n)));
+function show(){picture.src=scene.value+'_'+mode+'.png';document.getElementById('label').textContent=scene.value+' — '+mode;
+document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));}
+scene.onchange=show;document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;show()});
+document.onkeydown=e=>{if(['1','2','3','4'].includes(e.key)){mode=['full','anchor','cascade','v1'][Number(e.key)-1];show()}};
+document.getElementById('blink').onclick=()=>{if(timer){clearInterval(timer);timer=null;}else timer=setInterval(()=>{mode=mode==='full'?'cascade':'full';show()},700)};
+document.getElementById('fit').onclick=()=>{fit=!fit;picture.style.maxWidth=fit?'100%':'none';};show();</script></html>

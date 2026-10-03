@@ -1,0 +1,2531 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-02T21:19:34+0800",
+    "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+    "opengl": "4.3.0 NVIDIA 580.142",
+    "resolution": [
+      800,
+      450
+    ],
+    "frames": 7,
+    "factor_semantics": "N per axis, N^2 pixels",
+    "variant_definitions": {
+      "full": {
+        "levels": 1
+      },
+      "anchor": {
+        "levels": 3,
+        "factor": 2,
+        "threshold": 0.04
+      },
+      "optimized": {
+        "optimized": true,
+        "levels": 2,
+        "factor": 4,
+        "threshold": 0.035
+      }
+    },
+    "reference": "same PSMS Next_2 shader shaded at every final-resolution pixel; NOT converged transport",
+    "timing": "GL_TIME_ELAPSED entire cascade, rotated variant order each repetition; excludes readback",
+    "quality_gate": {
+      "max_rmse": 0.005,
+      "min_ssim": 0.99,
+      "max_bad_pixel_fraction_003": 0.01
+    },
+    "hashes": {
+      "baseline_psms.glsl": "d9a6fd0f9ff3153eb99d0d652b2b399ec83a97c78b20257424452d0d1dfda6c1",
+      "cascade.py": "52695ede97cecd330e5b7cfce24b86fd4d91dbe2447e805e36082a749e8b47aa",
+      "reconstruct.frag": "7682b95ae13133ab97ed9038dc8d000733ac78f99878bc9a9f30c35f60fc69ea",
+      "stencil.frag": "70937fe8b66b5538678275d0ccc2826ea2da86787fbf069498cc3769c6341778",
+      "benchmark.py": "b03306f56aa94f45a29c954c46d80d4b666bb79e859f8f38d093c397185d22df",
+      "fast.py": "336c79fa3569b8ddf602a8c9b490d8de4c7ecb8b9a6263e9e24798b7a76ec99f",
+      "curvature.frag": "4d9699c7d3c7ca7b702840f8f58fb09d8357cadbfeec3ccf4ac993ccb933347e",
+      "chunk_cache.py": "8fd8f5179c4b379268a7bdf4edec646cd55605f8cc99dde7e0403762f9c688d9",
+      "parent_score.frag": "968309de7985fb36616dcf804172c472bf1f4545e7fa2c398924ba6562f65f88",
+      "scored_reconstruct.frag": "fc906c130f526c0ee772051660705ab65638461d71d7f51d52cadc1acec30486",
+      "axis_reconstruct.frag": "349f197bfb847d21db8361863a174c4bf185c5a9649e2ba5d41005503829ad62",
+      "transport.py": "ae63d9eee7831edf742134150af0e6335365964f5e30c9121bdecfbb06ec4228",
+      "transport_reconstruct.frag": "7899d228ba4e3d29f0f54822b3ba9a3d3b268a5d728ea778eafb64a4c70f6e1d",
+      "transport_stencil.frag": "bbf461c6444a146adf39fd56937d33409edacc72aae677e04268993f6b4e48fe",
+      "single_frame.py": "1549127d4d7c555cdf7702a63375880c173d948ca623dc18dcd04d5a672d67f1",
+      "optimized_sources.py": "56ef3bb7abcd01e6b783e2cf7086fc268f934daf4d68a3b220a2c0761f488b92"
+    },
+    "visual_variant": "optimized",
+    "python": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:29:18) [GCC 11.2.0]",
+    "numpy": "2.2.6",
+    "selected_policy": "N4 two levels, T=0.035; full-resolution gather-LUT sky-only; original single pass below 800*450 pixels",
+    "heldout": false
+  },
+  "records": [
+    {
+      "scene": {
+        "name": "A-g",
+        "label": "ground,up",
+        "camera": [
+          57500.0,
+          57500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 6.15424,
+          "p95_ms": 6.3009792000000004,
+          "samples_ms": [
+            6.192128,
+            6.04672,
+            6.15424,
+            6.331392,
+            6.091776,
+            6.230016,
+            6.081536
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 4.768768,
+          "p95_ms": 5.1129344,
+          "samples_ms": [
+            5.187584,
+            4.538368,
+            4.938752,
+            4.926464,
+            4.644864,
+            4.639744,
+            4.768768
+          ],
+          "speedup": 1.2905303843676186,
+          "quality": {
+            "rmse": 0.0020234146389982465,
+            "psnr_db": 53.878302245947296,
+            "ssim_luma": 0.9973179162587001,
+            "edge_gradient_rmse": 0.001733337730489521,
+            "edge_region_rmse": 0.004666399052624926,
+            "p99_abs_rgb": 0.012875202894210819,
+            "bad_pixel_fraction_003": 0.0007944444444444444,
+            "max_abs_rgb": 0.08968079090118408,
+            "hdr_relative_rmse": 0.010332591831684113
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.1246
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.05695
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.15087777777777778
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 2.423808,
+          "p95_ms": 2.48832,
+          "samples_ms": [
+            2.473984,
+            2.351104,
+            2.417664,
+            2.44736,
+            2.393088,
+            2.494464,
+            2.423808
+          ],
+          "speedup": 2.5390790029573296,
+          "quality": {
+            "rmse": 0.0014317287023762988,
+            "psnr_db": 56.88278536993954,
+            "ssim_luma": 0.9986395520013303,
+            "edge_gradient_rmse": 0.001173379108869346,
+            "edge_region_rmse": 0.003039471653416672,
+            "p99_abs_rgb": 0.007165619134902962,
+            "bad_pixel_fraction_003": 0.00043055555555555555,
+            "max_abs_rgb": 0.09056425094604492,
+            "hdr_relative_rmse": 0.007562389597296715
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.14305
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.20582777777777778
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "A-h",
+        "label": "in-layer,level",
+        "camera": [
+          57500.0,
+          57500.0,
+          500.0
+        ],
+        "bias": 0.02,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 7.697408,
+          "p95_ms": 7.9268864,
+          "samples_ms": [
+            7.45472,
+            7.955456,
+            7.47008,
+            7.860224,
+            7.586816,
+            7.697408,
+            7.769088
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 5.395456,
+          "p95_ms": 5.8764288,
+          "samples_ms": [
+            5.79584,
+            5.218304,
+            5.395456,
+            5.349376,
+            5.901312,
+            5.03808,
+            5.818368
+          ],
+          "speedup": 1.426646422471057,
+          "quality": {
+            "rmse": 0.0013121586498437948,
+            "psnr_db": 57.640273046368186,
+            "ssim_luma": 0.9987238349649027,
+            "edge_gradient_rmse": 0.0013293411726484669,
+            "edge_region_rmse": 0.0030548676798797885,
+            "p99_abs_rgb": 0.006654341220855731,
+            "bad_pixel_fraction_003": 0.00015833333333333332,
+            "max_abs_rgb": 0.07677960395812988,
+            "hdr_relative_rmse": 0.0078261848539114
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.0595
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.038144444444444446
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.11579722222222222
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 2.225152,
+          "p95_ms": 2.2929408,
+          "samples_ms": [
+            2.225152,
+            2.198528,
+            2.161664,
+            2.307072,
+            2.259968,
+            2.187264,
+            2.246656
+          ],
+          "speedup": 3.4592728946157387,
+          "quality": {
+            "rmse": 0.0011230626229888077,
+            "psnr_db": 58.9919205281955,
+            "ssim_luma": 0.9990438990410041,
+            "edge_gradient_rmse": 0.0011123217638368795,
+            "edge_region_rmse": 0.0017995132885103124,
+            "p99_abs_rgb": 0.005552355051040653,
+            "bad_pixel_fraction_003": 9.444444444444444e-05,
+            "max_abs_rgb": 0.07677948474884033,
+            "hdr_relative_rmse": 0.006556130480021238
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.06911111111111111
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.1318888888888889
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "A-t",
+        "label": "high,down",
+        "camera": [
+          57500.0,
+          57500.0,
+          9000.0
+        ],
+        "bias": -0.35,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 6.689792,
+          "p95_ms": 6.9537792,
+          "samples_ms": [
+            6.929408,
+            6.689792,
+            6.964224,
+            6.658048,
+            6.644736,
+            6.66624,
+            6.740992
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 9.015296,
+          "p95_ms": 9.2404736,
+          "samples_ms": [
+            9.294848,
+            9.1136,
+            8.819712,
+            9.015296,
+            8.813568,
+            9.092096,
+            8.788992
+          ],
+          "speedup": 0.7420490686051795,
+          "quality": {
+            "rmse": 0.0014996375321686115,
+            "psnr_db": 56.48027397624279,
+            "ssim_luma": 0.9986457743443647,
+            "edge_gradient_rmse": 0.0016232816509619199,
+            "edge_region_rmse": 0.0012405120969774584,
+            "p99_abs_rgb": 0.008051022887229961,
+            "bad_pixel_fraction_003": 0.0008694444444444445,
+            "max_abs_rgb": 0.18858522176742554,
+            "hdr_relative_rmse": 0.012792608700692654
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.6940222222222222
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.6231027777777778
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.8593861111111111
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 3.241984,
+          "p95_ms": 3.4236416,
+          "samples_ms": [
+            3.241984,
+            3.218432,
+            3.23072,
+            3.319808,
+            3.442688,
+            3.140608,
+            3.3792
+          ],
+          "speedup": 2.0634870499052433,
+          "quality": {
+            "rmse": 0.0007912942953936801,
+            "psnr_db": 62.03323930362185,
+            "ssim_luma": 0.9996617761885147,
+            "edge_gradient_rmse": 0.0007968259569647208,
+            "edge_region_rmse": 0.0011517054047827646,
+            "p99_abs_rgb": 0.0015038275718688987,
+            "bad_pixel_fraction_003": 0.0001361111111111111,
+            "max_abs_rgb": 0.18869519233703613,
+            "hdr_relative_rmse": 0.009685262106359005
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.7182277777777778
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.7810055555555555
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "B-g",
+        "label": "ground,up",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 11.170816,
+          "p95_ms": 11.2710656,
+          "samples_ms": [
+            11.288576,
+            11.099136,
+            11.103232,
+            11.170816,
+            11.230208,
+            11.056128,
+            11.185152
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 8.577024,
+          "p95_ms": 8.7597056,
+          "samples_ms": [
+            8.614912,
+            8.522752,
+            8.82176,
+            8.489984,
+            8.363008,
+            8.577024,
+            8.58112
+          ],
+          "speedup": 1.302411652340019,
+          "quality": {
+            "rmse": 0.002049299514215736,
+            "psnr_db": 53.76789125789128,
+            "ssim_luma": 0.9973040136181044,
+            "edge_gradient_rmse": 0.001772498420969211,
+            "edge_region_rmse": 0.0026201242877128836,
+            "p99_abs_rgb": 0.012126770019531274,
+            "bad_pixel_fraction_003": 0.0005555555555555556,
+            "max_abs_rgb": 0.1315637230873108,
+            "hdr_relative_rmse": 0.011402023024857044
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.3032444444444444
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.16813333333333333
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.30672222222222223
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 4.789248,
+          "p95_ms": 5.0607104,
+          "samples_ms": [
+            4.789248,
+            5.051392,
+            4.739072,
+            4.783104,
+            5.064704,
+            4.969472,
+            4.733952
+          ],
+          "speedup": 2.3324780842420356,
+          "quality": {
+            "rmse": 0.0013517549636626674,
+            "psnr_db": 57.38204054028295,
+            "ssim_luma": 0.9987626806864174,
+            "edge_gradient_rmse": 0.001098699636148789,
+            "edge_region_rmse": 0.0013601664415991892,
+            "p99_abs_rgb": 0.007767916917800904,
+            "bad_pixel_fraction_003": 0.00019444444444444443,
+            "max_abs_rgb": 0.06906545162200928,
+            "hdr_relative_rmse": 0.007535004056990147
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.33027222222222224
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.39305
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "B-h",
+        "label": "in-layer,level",
+        "camera": [
+          57500.0,
+          22500.0,
+          2500.0
+        ],
+        "bias": 0.02,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 9.652224,
+          "p95_ms": 9.96352,
+          "samples_ms": [
+            9.380864,
+            9.975808,
+            9.934848,
+            9.475072,
+            9.663488,
+            9.652224,
+            9.619456
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 11.404288,
+          "p95_ms": 11.6544512,
+          "samples_ms": [
+            11.134976,
+            11.264,
+            11.404288,
+            11.7248,
+            11.469824,
+            11.490304,
+            11.29472
+          ],
+          "speedup": 0.8463679626470325,
+          "quality": {
+            "rmse": 0.002140515283970567,
+            "psnr_db": 53.38963333631425,
+            "ssim_luma": 0.996829034873172,
+            "edge_gradient_rmse": 0.0022118979103052383,
+            "edge_region_rmse": 0.0012232751829252912,
+            "p99_abs_rgb": 0.014349533319473279,
+            "bad_pixel_fraction_003": 0.0008972222222222222,
+            "max_abs_rgb": 0.1826075315475464,
+            "hdr_relative_rmse": 0.01346121821552515
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.45266666666666666
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.33205277777777775
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.5079972222222222
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 4.959232,
+          "p95_ms": 5.1037184,
+          "samples_ms": [
+            4.959232,
+            5.144576,
+            4.992,
+            4.80768,
+            4.9408,
+            4.942848,
+            5.008384
+          ],
+          "speedup": 1.9463142680156928,
+          "quality": {
+            "rmse": 0.0011896095650583496,
+            "psnr_db": 58.491911050526355,
+            "ssim_luma": 0.999073528851452,
+            "edge_gradient_rmse": 0.0011091052877308485,
+            "edge_region_rmse": 0.0009241713758318063,
+            "p99_abs_rgb": 0.008252115845680266,
+            "bad_pixel_fraction_003": 0.0003277777777777778,
+            "max_abs_rgb": 0.08637112379074097,
+            "hdr_relative_rmse": 0.007341607008129358
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.47028333333333333
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.5330611111111111
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "B-t",
+        "label": "high,down",
+        "camera": [
+          57500.0,
+          22500.0,
+          9000.0
+        ],
+        "bias": -0.35,
+        "sun": [
+          0.8769511271716524,
+          0.32849329935939453,
+          0.35078322768961984
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 8.157184,
+          "p95_ms": 8.4432896,
+          "samples_ms": [
+            8.061952,
+            8.406016,
+            8.157184,
+            8.459264,
+            8.297472,
+            8.131584,
+            8.081408
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 10.697728,
+          "p95_ms": 10.9948928,
+          "samples_ms": [
+            10.534912,
+            10.697728,
+            10.396672,
+            10.628096,
+            10.866688,
+            11.030528,
+            10.911744
+          ],
+          "speedup": 0.7625155547047,
+          "quality": {
+            "rmse": 0.0017669058939846218,
+            "psnr_db": 55.055731611014025,
+            "ssim_luma": 0.9982143504068863,
+            "edge_gradient_rmse": 0.0019312322476986647,
+            "edge_region_rmse": 0.001222714581552867,
+            "p99_abs_rgb": 0.009681226015090943,
+            "bad_pixel_fraction_003": 0.0012694444444444444,
+            "max_abs_rgb": 0.18899032473564148,
+            "hdr_relative_rmse": 0.013058565557003021
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.6240222222222223
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.5435888888888889
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.7623722222222222
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 4.206592,
+          "p95_ms": 4.3833344,
+          "samples_ms": [
+            4.10624,
+            4.310016,
+            4.206592,
+            4.185088,
+            4.16256,
+            4.41344,
+            4.313088
+          ],
+          "speedup": 1.9391431353456674,
+          "quality": {
+            "rmse": 0.000946932737426611,
+            "psnr_db": 60.47361737456859,
+            "ssim_luma": 0.9994933786994533,
+            "edge_gradient_rmse": 0.001026165019288314,
+            "edge_region_rmse": 0.0005496518034304854,
+            "p99_abs_rgb": 0.0017487519979477034,
+            "bad_pixel_fraction_003": 0.00025833333333333334,
+            "max_abs_rgb": 0.18899032473564148,
+            "hdr_relative_rmse": 0.00984293781220913
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.6483611111111112
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.711138888888889
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "preset-back",
+        "label": "presunset back-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.0,
+          0.9975640502598242,
+          0.0697564737441253
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 11.635712,
+          "p95_ms": 11.753472,
+          "samples_ms": [
+            11.63264,
+            11.76576,
+            11.590656,
+            11.7248,
+            11.425792,
+            11.69408,
+            11.635712
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 9.414656,
+          "p95_ms": 9.5187968,
+          "samples_ms": [
+            9.275392,
+            9.413632,
+            9.427968,
+            9.326592,
+            9.414656,
+            9.537536,
+            9.475072
+          ],
+          "speedup": 1.2359147269958668,
+          "quality": {
+            "rmse": 0.001839341778243269,
+            "psnr_db": 54.70675129219647,
+            "ssim_luma": 0.9979254588646156,
+            "edge_gradient_rmse": 0.0015635875901107799,
+            "edge_region_rmse": 0.0020308902698963865,
+            "p99_abs_rgb": 0.011043681502342237,
+            "bad_pixel_fraction_003": 0.00035555555555555557,
+            "max_abs_rgb": 0.1427016258239746,
+            "hdr_relative_rmse": 0.010017172433435917
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.288
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.1628388888888889
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.29761666666666664
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 5.185536,
+          "p95_ms": 5.2550656,
+          "samples_ms": [
+            5.141504,
+            5.185536,
+            5.243904,
+            5.101568,
+            5.105664,
+            5.257216,
+            5.250048
+          ],
+          "speedup": 2.243878357030016,
+          "quality": {
+            "rmse": 0.0013734714649133012,
+            "psnr_db": 57.24360718004752,
+            "ssim_luma": 0.9987183849291604,
+            "edge_gradient_rmse": 0.0011765472713033353,
+            "edge_region_rmse": 0.0012550861514257763,
+            "p99_abs_rgb": 0.008674087524414065,
+            "bad_pixel_fraction_003": 0.000125,
+            "max_abs_rgb": 0.12525326013565063,
+            "hdr_relative_rmse": 0.005457472056150436
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.30705
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.36982777777777776
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "preset-side",
+        "label": "presunset side-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.9975640502598242,
+          6.108318105475815e-17,
+          0.0697564737441253
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 12.593152,
+          "p95_ms": 12.7991808,
+          "samples_ms": [
+            12.3392,
+            12.7232,
+            12.672,
+            12.546048,
+            12.831744,
+            12.593152,
+            12.587008
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 10.087424,
+          "p95_ms": 10.3629824,
+          "samples_ms": [
+            10.087424,
+            10.267648,
+            10.40384,
+            9.28768,
+            9.842688,
+            10.103808,
+            9.956352
+          ],
+          "speedup": 1.248401177545427,
+          "quality": {
+            "rmse": 0.00189594747235961,
+            "psnr_db": 54.44347398110228,
+            "ssim_luma": 0.9978224953928303,
+            "edge_gradient_rmse": 0.001561909676394546,
+            "edge_region_rmse": 0.002358544072532367,
+            "p99_abs_rgb": 0.01152748286724091,
+            "bad_pixel_fraction_003": 0.00043611111111111113,
+            "max_abs_rgb": 0.13342463970184326,
+            "hdr_relative_rmse": 0.010916605591773987
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.30086666666666667
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.16242222222222222
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.30041666666666667
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 5.846016,
+          "p95_ms": 5.9625471999999995,
+          "samples_ms": [
+            5.632,
+            5.594112,
+            5.972992,
+            5.846016,
+            5.797888,
+            5.875712,
+            5.938176
+          ],
+          "speedup": 2.1541425818882467,
+          "quality": {
+            "rmse": 0.0012764723863437299,
+            "psnr_db": 57.879771515169665,
+            "ssim_luma": 0.9989080358954077,
+            "edge_gradient_rmse": 0.0010129722640482462,
+            "edge_region_rmse": 0.0012420296542438787,
+            "p99_abs_rgb": 0.007728738486766827,
+            "bad_pixel_fraction_003": 0.00013333333333333334,
+            "max_abs_rgb": 0.08735513687133789,
+            "hdr_relative_rmse": 0.007577945478260517
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.32510555555555554
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.38788333333333336
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "preset-front",
+        "label": "presunset front-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          1.221663621095163e-16,
+          -0.9975640502598242,
+          0.0697564737441253
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 13.708288,
+          "p95_ms": 14.0474368,
+          "samples_ms": [
+            13.88032,
+            14.101504,
+            13.635584,
+            13.92128,
+            13.628416,
+            13.708288,
+            13.707264
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 10.724352,
+          "p95_ms": 11.283456,
+          "samples_ms": [
+            10.667008,
+            10.683392,
+            10.724352,
+            10.684416,
+            11.041792,
+            11.375616,
+            11.068416
+          ],
+          "speedup": 1.2782392819631434,
+          "quality": {
+            "rmse": 0.0019992356441905627,
+            "psnr_db": 53.98272027631484,
+            "ssim_luma": 0.9973438546613485,
+            "edge_gradient_rmse": 0.0018354803930127257,
+            "edge_region_rmse": 0.002538007654363607,
+            "p99_abs_rgb": 0.010865309834480322,
+            "bad_pixel_fraction_003": 0.00036666666666666667,
+            "max_abs_rgb": 0.16219836473464966,
+            "hdr_relative_rmse": 0.011246906593441963
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.29793333333333333
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.17147777777777778
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.3087388888888889
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 7.005184,
+          "p95_ms": 7.1675904,
+          "samples_ms": [
+            6.950912,
+            6.762496,
+            7.185408,
+            7.005184,
+            6.501376,
+            7.12192,
+            7.126016
+          ],
+          "speedup": 1.9568776494664522,
+          "quality": {
+            "rmse": 0.001530723804034828,
+            "psnr_db": 56.30206328211007,
+            "ssim_luma": 0.9983414834038559,
+            "edge_gradient_rmse": 0.0013894917833234476,
+            "edge_region_rmse": 0.0018451542728060212,
+            "p99_abs_rgb": 0.008749699294567113,
+            "bad_pixel_fraction_003": 0.0001638888888888889,
+            "max_abs_rgb": 0.135026752948761,
+            "hdr_relative_rmse": 0.00900658592581749
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.3204166666666667
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.38319444444444445
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "postset-back",
+        "label": "postsunset back-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.0,
+          0.9998476951563913,
+          -0.01745240643728351
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 11.748352,
+          "p95_ms": 11.970867199999999,
+          "samples_ms": [
+            11.748352,
+            11.8528,
+            11.681792,
+            11.928576,
+            11.696128,
+            11.988992,
+            11.625472
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 7.72608,
+          "p95_ms": 8.0595968,
+          "samples_ms": [
+            7.91552,
+            8.121344,
+            7.77216,
+            7.571456,
+            7.502848,
+            7.72608,
+            7.47008
+          ],
+          "speedup": 1.5206096752816436,
+          "quality": {
+            "rmse": 0.0013385476296204999,
+            "psnr_db": 57.46732341351063,
+            "ssim_luma": 0.9994285473690451,
+            "edge_gradient_rmse": 0.0008156882704087825,
+            "edge_region_rmse": 0.002226616088615776,
+            "p99_abs_rgb": 0.0070850312709808405,
+            "bad_pixel_fraction_003": 0.0003138888888888889,
+            "max_abs_rgb": 0.1245143711566925,
+            "hdr_relative_rmse": 0.009340438060462475
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.2132
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.10517777777777777
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.22125555555555557
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 4.878336,
+          "p95_ms": 5.2637696,
+          "samples_ms": [
+            4.59264,
+            4.80256,
+            4.872192,
+            5.262336,
+            5.264384,
+            4.905984,
+            4.878336
+          ],
+          "speedup": 2.4082703610411422,
+          "quality": {
+            "rmse": 0.0008263199745278623,
+            "psnr_db": 61.65703497942562,
+            "ssim_luma": 0.9997758204581699,
+            "edge_gradient_rmse": 0.0004480183467975071,
+            "edge_region_rmse": 0.0013710644323864543,
+            "p99_abs_rgb": 0.00553438693284989,
+            "bad_pixel_fraction_003": 6.666666666666667e-05,
+            "max_abs_rgb": 0.07425013184547424,
+            "hdr_relative_rmse": 0.006038352847099304
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.2277
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.29047777777777783
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "postset-side",
+        "label": "postsunset side-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0.9998476951563913,
+          6.122301397540666e-17,
+          -0.01745240643728351
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 12.99456,
+          "p95_ms": 13.4769664,
+          "samples_ms": [
+            12.647424,
+            12.967936,
+            12.99456,
+            13.563904,
+            12.934144,
+            13.274112,
+            13.206528
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 7.858176,
+          "p95_ms": 8.1980416,
+          "samples_ms": [
+            8.006656,
+            7.934976,
+            7.757824,
+            7.858176,
+            7.760896,
+            7.303168,
+            8.280064
+          ],
+          "speedup": 1.6536356528537919,
+          "quality": {
+            "rmse": 0.0015709549587145791,
+            "psnr_db": 56.07672533118189,
+            "ssim_luma": 0.9992529040807107,
+            "edge_gradient_rmse": 0.0009843722057254838,
+            "edge_region_rmse": 0.003213398476014709,
+            "p99_abs_rgb": 0.008161316514015207,
+            "bad_pixel_fraction_003": 0.0003138888888888889,
+            "max_abs_rgb": 0.17691299319267273,
+            "hdr_relative_rmse": 0.011404178105294704
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.20915555555555557
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.09498888888888889
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.21005555555555555
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 5.261312,
+          "p95_ms": 5.5318528,
+          "samples_ms": [
+            5.261312,
+            5.21216,
+            5.003264,
+            5.595136,
+            5.320704,
+            5.384192,
+            5.101568
+          ],
+          "speedup": 2.46983261969638,
+          "quality": {
+            "rmse": 0.0008571580081587071,
+            "psnr_db": 61.338782260575684,
+            "ssim_luma": 0.9997727271589355,
+            "edge_gradient_rmse": 0.0004478680064084856,
+            "edge_region_rmse": 0.0011481007019943153,
+            "p99_abs_rgb": 0.005921793282032024,
+            "bad_pixel_fraction_003": 7.222222222222222e-05,
+            "max_abs_rgb": 0.07417556643486023,
+            "hdr_relative_rmse": 0.00659502437338233
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.2333
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.2960777777777778
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "postset-front",
+        "label": "postsunset front-lit",
+        "camera": [
+          57500.0,
+          22500.0,
+          0.0
+        ],
+        "bias": 0.4,
+        "sun": [
+          1.2244602795081332e-16,
+          -0.9998476951563913,
+          -0.01745240643728351
+        ],
+        "sky_only": false,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 13.730816,
+          "p95_ms": 13.9937792,
+          "samples_ms": [
+            13.519872,
+            13.796352,
+            13.919232,
+            13.730816,
+            14.025728,
+            13.659136,
+            13.691904
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 9.171968,
+          "p95_ms": 9.354854399999999,
+          "samples_ms": [
+            8.827904,
+            9.360384,
+            9.137152,
+            8.461312,
+            9.276416,
+            9.171968,
+            9.341952
+          ],
+          "speedup": 1.4970414201183433,
+          "quality": {
+            "rmse": 0.0013591866682884813,
+            "psnr_db": 57.334417878735806,
+            "ssim_luma": 0.9993851072866539,
+            "edge_gradient_rmse": 0.0008515181508971373,
+            "edge_region_rmse": 0.0021829598317043603,
+            "p99_abs_rgb": 0.007834149301052105,
+            "bad_pixel_fraction_003": 0.00029444444444444445,
+            "max_abs_rgb": 0.12502820789813995,
+            "hdr_relative_rmse": 0.009733292274177074
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.21695555555555557
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.10530555555555556
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.22232222222222223
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 5.687296,
+          "p95_ms": 5.9455488,
+          "samples_ms": [
+            5.702656,
+            5.905408,
+            5.34528,
+            5.687296,
+            5.962752,
+            5.614592,
+            5.420032
+          ],
+          "speedup": 2.414296002880807,
+          "quality": {
+            "rmse": 0.0008972698002649783,
+            "psnr_db": 60.94153898419783,
+            "ssim_luma": 0.9997335293036469,
+            "edge_gradient_rmse": 0.0004937083331184165,
+            "edge_region_rmse": 0.0012891922975938324,
+            "p99_abs_rgb": 0.006127000153064728,
+            "bad_pixel_fraction_003": 0.00010277777777777778,
+            "max_abs_rgb": 0.07379886507987976,
+            "hdr_relative_rmse": 0.007001188118010759
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.23563333333333333
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.2984111111111111
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "sky-day",
+        "label": "Atmosphere only",
+        "camera": [
+          57500,
+          22500,
+          0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0,
+          0.9396926207859084,
+          0.3420201433256687
+        ],
+        "sky_only": true,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 1.328128,
+          "p95_ms": 1.3360128,
+          "samples_ms": [
+            1.333248,
+            1.325056,
+            1.32608,
+            1.32608,
+            1.328128,
+            1.33632,
+            1.335296
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 0.367616,
+          "p95_ms": 0.3693568,
+          "samples_ms": [
+            0.369664,
+            0.365568,
+            0.367616,
+            0.360448,
+            0.36864,
+            0.36352,
+            0.36864
+          ],
+          "speedup": 3.6128133704735377,
+          "quality": {
+            "rmse": 9.169719327181629e-05,
+            "psnr_db": 80.75287914597087,
+            "ssim_luma": 0.9999992341535423,
+            "edge_gradient_rmse": 1.93246388601229e-05,
+            "edge_region_rmse": 0.0001402688066646816,
+            "p99_abs_rgb": 0.0005499160289764438,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.001292586326599121,
+            "hdr_relative_rmse": 0.0003880946896970272
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.04151111111111111
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.014133333333333333
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.08728888888888889
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 0.395264,
+          "p95_ms": 0.39598079999999997,
+          "samples_ms": [
+            0.395264,
+            0.395264,
+            0.395264,
+            0.393216,
+            0.393216,
+            0.395264,
+            0.396288
+          ],
+          "speedup": 3.360103626943005,
+          "quality": {
+            "rmse": 3.1284177915986903e-07,
+            "psnr_db": 130.09350505809005,
+            "ssim_luma": 0.9999999999918648,
+            "edge_gradient_rmse": 1.1046560135459049e-07,
+            "edge_region_rmse": 4.82824444423371e-07,
+            "p99_abs_rgb": 1.3113021850585938e-06,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 3.039836883544922e-06,
+            "hdr_relative_rmse": 8.85383144577645e-07
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0,
+            "full_resolution_sky": true
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    },
+    {
+      "scene": {
+        "name": "sky-twilight",
+        "label": "Atmosphere only",
+        "camera": [
+          57500,
+          22500,
+          0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0,
+          0.9998476951563913,
+          -0.01745240643728351
+        ],
+        "sky_only": true,
+        "itime": 10.0
+      },
+      "variants": {
+        "full": {
+          "median_ms": 1.196032,
+          "p95_ms": 1.19808,
+          "samples_ms": [
+            1.189888,
+            1.193984,
+            1.195008,
+            1.196032,
+            1.197056,
+            1.19808,
+            1.19808
+          ],
+          "speedup": 1.0,
+          "quality": {
+            "rmse": 0.0,
+            "psnr_db": 240.0,
+            "ssim_luma": 1.0,
+            "edge_gradient_rmse": 0.0,
+            "edge_region_rmse": 0.0,
+            "p99_abs_rgb": 0.0,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.0,
+            "hdr_relative_rmse": 0.0
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "anchor": {
+          "median_ms": 0.357376,
+          "p95_ms": 0.3580928,
+          "samples_ms": [
+            0.355328,
+            0.357376,
+            0.357376,
+            0.357376,
+            0.357376,
+            0.3584,
+            0.35328
+          ],
+          "speedup": 3.3467048710601714,
+          "quality": {
+            "rmse": 0.0005795854232957517,
+            "psnr_db": 64.73765091335565,
+            "ssim_luma": 0.9999205049854318,
+            "edge_gradient_rmse": 0.00029682689755033807,
+            "edge_region_rmse": 0.0001796672911252423,
+            "p99_abs_rgb": 0.002273738384246826,
+            "bad_pixel_fraction_003": 0.00018333333333333334,
+            "max_abs_rgb": 0.03447270393371582,
+            "hdr_relative_rmse": 0.007467007730156183
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  200,
+                  113
+                ],
+                "shaded_fraction": 1.0
+              },
+              {
+                "size": [
+                  400,
+                  225
+                ],
+                "shaded_fraction": 0.044444444444444446
+              },
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 0.024766666666666666
+              }
+            ],
+            "full_resolution_equivalent_shading": 0.09865555555555555
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        },
+        "optimized": {
+          "median_ms": 0.350208,
+          "p95_ms": 0.3519488,
+          "samples_ms": [
+            0.350208,
+            0.351232,
+            0.350208,
+            0.34816,
+            0.351232,
+            0.350208,
+            0.352256
+          ],
+          "speedup": 3.415204678362573,
+          "quality": {
+            "rmse": 7.619815798370623e-05,
+            "psnr_db": 82.36111054359677,
+            "ssim_luma": 0.9999999912033902,
+            "edge_gradient_rmse": 2.967707643963887e-06,
+            "edge_region_rmse": 0.00013198161747474208,
+            "p99_abs_rgb": 0.0002487003803253174,
+            "bad_pixel_fraction_003": 0.0,
+            "max_abs_rgb": 0.00026994943618774414,
+            "hdr_relative_rmse": 0.0005948151811026037
+          },
+          "work": {
+            "levels": [
+              {
+                "size": [
+                  800,
+                  450
+                ],
+                "shaded_fraction": 1.0
+              }
+            ],
+            "full_resolution_equivalent_shading": 1.0,
+            "full_resolution_sky": true
+          },
+          "quality_vs_anchor": {
+            "rmse": true,
+            "ssim": true,
+            "bad_pixels": true,
+            "pass": true
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "full": {
+      "mean_ms": 9.175478857142858,
+      "aggregate_speedup": 1.0,
+      "arithmetic_mean_scene_speedup": 1.0,
+      "min_scene_speedup": 1.0,
+      "mean_rmse": 0.0,
+      "worst_rmse": 0.0,
+      "min_ssim": 1.0,
+      "worst_bad_pixel_fraction": 0.0,
+      "mean_shading_fraction": 1.0,
+      "quality_gate_pass": true,
+      "quality_vs_anchor_pass": true,
+      "no_measured_slowdown": true
+    },
+    "anchor": {
+      "mean_ms": 7.540443428571429,
+      "aggregate_speedup": 1.2168354479494043,
+      "arithmetic_mean_scene_speedup": 1.5545629443876812,
+      "min_scene_speedup": 0.7420490686051795,
+      "mean_rmse": 0.0015333163057975822,
+      "worst_rmse": 0.002140515283970567,
+      "min_ssim": 0.996829034873172,
+      "worst_bad_pixel_fraction": 0.0012694444444444444,
+      "mean_shading_fraction": 0.3178216269841269,
+      "quality_gate_pass": true,
+      "quality_vs_anchor_pass": true,
+      "no_measured_slowdown": false
+    },
+    "optimized": {
+      "mean_ms": 4.032512,
+      "aggregate_speedup": 2.2753754625263007,
+      "arithmetic_mean_scene_speedup": 2.478741450885024,
+      "min_scene_speedup": 1.9391431353456674,
+      "mean_rmse": 0.000976593523208049,
+      "worst_rmse": 0.001530723804034828,
+      "min_ssim": 0.9983414834038559,
+      "worst_bad_pixel_fraction": 0.00043055555555555555,
+      "mean_shading_fraction": 0.4844174603174603,
+      "quality_gate_pass": true,
+      "quality_vs_anchor_pass": true,
+      "no_measured_slowdown": true
+    }
+  },
+  "cloud_summary": {
+    "full": {
+      "mean_ms": 10.494378666666668,
+      "aggregate_speedup": 1.0,
+      "arithmetic_mean_scene_speedup": 1.0,
+      "min_scene_speedup": 1.0,
+      "mean_rmse": 0.0,
+      "worst_rmse": 0.0,
+      "min_ssim": 1.0,
+      "worst_bad_pixel_fraction": 0.0,
+      "mean_shading_fraction": 1.0,
+      "quality_gate_pass": true,
+      "quality_vs_anchor_pass": true,
+      "no_measured_slowdown": true
+    },
+    "anchor": {
+      "mean_ms": 8.736768,
+      "aggregate_speedup": 1.201174011564307,
+      "arithmetic_mean_scene_speedup": 1.233696914991152,
+      "min_scene_speedup": 0.7420490686051795,
+      "mean_rmse": 0.001732928805383215,
+      "worst_rmse": 0.002140515283970567,
+      "min_ssim": 0.996829034873172,
+      "worst_bad_pixel_fraction": 0.0012694444444444444,
+      "mean_shading_fraction": 0.35529652777777776,
+      "quality_gate_pass": true,
+      "quality_vs_anchor_pass": true,
+      "no_measured_slowdown": false
+    },
+    "optimized": {
+      "mean_ms": 4.642474666666667,
+      "aggregate_speedup": 2.260513932799059,
+      "arithmetic_mean_scene_speedup": 2.327256000590396,
+      "min_scene_speedup": 1.9391431353456674,
+      "mean_rmse": 0.001132983193762485,
+      "worst_rmse": 0.001530723804034828,
+      "min_ssim": 0.9983414834038559,
+      "worst_bad_pixel_fraction": 0.00043055555555555555,
+      "mean_shading_fraction": 0.39848703703703703,
+      "quality_gate_pass": true,
+      "quality_vs_anchor_pass": true,
+      "no_measured_slowdown": true
+    }
+  }
+}

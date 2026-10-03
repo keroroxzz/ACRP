@@ -1,0 +1,99 @@
+{
+ "resolution": [
+  2560,
+  1440
+ ],
+ "totals_ms": {
+  "cloudworks-2021": 182.36,
+  "HSE": 2650.72,
+  "HSE-Next": 705.79,
+  "HSE-PSMS": 1366.34,
+  "HSE-PSMS-Next": 891.52
+ },
+ "per_config": {
+  "A-g": {
+   "cloudworks-2021": 15.21,
+   "HSE": 224.37,
+   "HSE-Next": 32.9,
+   "HSE-PSMS": 90.76,
+   "HSE-PSMS-Next": 48.31
+  },
+  "A-h": {
+   "cloudworks-2021": 16.06,
+   "HSE": 171.71,
+   "HSE-Next": 39.19,
+   "HSE-PSMS": 95.9,
+   "HSE-PSMS-Next": 55.09
+  },
+  "A-t": {
+   "cloudworks-2021": 4.97,
+   "HSE": 116.26,
+   "HSE-Next": 30.0,
+   "HSE-PSMS": 89.35,
+   "HSE-PSMS-Next": 48.28
+  },
+  "B-g": {
+   "cloudworks-2021": 17.03,
+   "HSE": 248.68,
+   "HSE-Next": 63.69,
+   "HSE-PSMS": 121.74,
+   "HSE-PSMS-Next": 80.48
+  },
+  "B-h": {
+   "cloudworks-2021": 11.88,
+   "HSE": 164.99,
+   "HSE-Next": 49.68,
+   "HSE-PSMS": 106.83,
+   "HSE-PSMS-Next": 66.52
+  },
+  "B-t": {
+   "cloudworks-2021": 5.17,
+   "HSE": 130.55,
+   "HSE-Next": 37.73,
+   "HSE-PSMS": 96.25,
+   "HSE-PSMS-Next": 55.45
+  },
+  "preset-back": {
+   "cloudworks-2021": 18.57,
+   "HSE": 241.68,
+   "HSE-Next": 67.05,
+   "HSE-PSMS": 121.31,
+   "HSE-PSMS-Next": 82.38
+  },
+  "preset-side": {
+   "cloudworks-2021": 18.27,
+   "HSE": 242.96,
+   "HSE-Next": 75.32,
+   "HSE-PSMS": 127.8,
+   "HSE-PSMS-Next": 89.77
+  },
+  "preset-front": {
+   "cloudworks-2021": 18.61,
+   "HSE": 320.56,
+   "HSE-Next": 82.79,
+   "HSE-PSMS": 134.04,
+   "HSE-PSMS-Next": 96.72
+  },
+  "postset-back": {
+   "cloudworks-2021": 18.96,
+   "HSE": 219.53,
+   "HSE-Next": 67.79,
+   "HSE-PSMS": 119.99,
+   "HSE-PSMS-Next": 81.76
+  },
+  "postset-side": {
+   "cloudworks-2021": 18.64,
+   "HSE": 262.46,
+   "HSE-Next": 78.29,
+   "HSE-PSMS": 129.67,
+   "HSE-PSMS-Next": 91.79
+  },
+  "postset-front": {
+   "cloudworks-2021": 19.01,
+   "HSE": 306.96,
+   "HSE-Next": 81.37,
+   "HSE-PSMS": 132.7,
+   "HSE-PSMS-Next": 94.97
+  }
+ }
+}

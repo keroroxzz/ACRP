@@ -1,0 +1,36 @@
+{
+  "cases": {
+    "norm_direct_f32": {
+      "coeff_max": 1.2053682520709805e-06,
+      "coeff_rel_max": 2.7345833051119442e-06,
+      "dtau_max": 2.796224340961828e-08,
+      "devent_max": 3.277722159661378e-08,
+      "it_mean": 2.0683333333333334,
+      "fb_total": 0
+    },
+    "norm_direct_f32_comp": {
+      "coeff_max": 1.2053682520709805e-06,
+      "coeff_rel_max": 2.7345833051119442e-06,
+      "dtau_max": 2.796224340961828e-08,
+      "devent_max": 3.277722159661378e-08,
+      "it_mean": 2.0683333333333334,
+      "fb_total": 0
+    },
+    "norm_cast_f32": {
+      "coeff_max": 5.866449792613082e-08,
+      "coeff_rel_max": 5.8219756051365285e-08,
+      "dtau_max": 9.66495285192881e-09,
+      "devent_max": 3.277722159661378e-08,
+      "it_mean": 2.0683333333333334,
+      "fb_total": 0
+    },
+    "world_direct_f32": {
+      "coeff_max": null,
+      "coeff_rel_max": null,
+      "dtau_max": 2.4236953111156367e-08,
+      "devent_max": 9.85744096762076e-07,
+      "it_mean": 1.7025,
+      "fb_total": 0
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "seed": 20260718,
+  "rays_per_frequency": 12,
+  "cases": {
+    "F16_f32_div": {
+      "rays": 12,
+      "topology_mismatches": 4,
+      "p99_boundary_time_error": 1.2016402384418256e-06,
+      "p95_tau_abs_error": 5.417888360170759e-15,
+      "p99_tau_abs_error": 8.544276397515209e-15,
+      "max_tau_abs_error": 9.325873406851315e-15
+    },
+    "F16_f32_cross": {
+      "rays": 12,
+      "topology_mismatches": 5,
+      "p99_boundary_time_error": 1.202653530683051e-06,
+      "p95_tau_abs_error": 1.0125233984581426e-14,
+      "p99_tau_abs_error": 1.0906830993917539e-14,
+      "max_tau_abs_error": 1.1102230246251565e-14
+    },
+    "F16_mixed64": {
+      "rays": 12,
+      "topology_mismatches": 5,
+      "p99_boundary_time_error": 6.587183125716933e-07,
+      "p95_tau_abs_error": 1.7763568394002505e-15,
+      "p99_tau_abs_error": 1.7763568394002505e-15,
+      "max_tau_abs_error": 1.7763568394002505e-15
+    },
+    "F64_f32_div": {
+      "rays": 12,
+      "topology_mismatches": 8,
+      "p99_boundary_time_error": 0.0223013549481405,
+      "p95_tau_abs_error": 2.5268676040468543e-14,
+      "p99_tau_abs_error": 3.7383429685178287e-14,
+      "max_tau_abs_error": 4.04121180963557e-14
+    },
+    "F64_f32_cross": {
+      "rays": 12,
+      "topology_mismatches": 8,
+      "p99_boundary_time_error": 0.0223013549481405,
+      "p95_tau_abs_error": 2.5268676040468543e-14,
+      "p99_tau_abs_error": 3.7383429685178287e-14,
+      "max_tau_abs_error": 4.04121180963557e-14
+    },
+    "F64_mixed64": {
+      "rays": 12,
+      "topology_mismatches": 10,
+      "p99_boundary_time_error": 1.655612468844936e-06,
+      "p95_tau_abs_error": 3.1086244689504383e-15,
+      "p99_tau_abs_error": 3.1086244689504383e-15,
+      "max_tau_abs_error": 3.1086244689504383e-15
+    },
+    "F128_f32_div": {
+      "rays": 12,
+      "topology_mismatches": 11,
+      "p99_boundary_time_error": 0.010569872008301786,
+      "p95_tau_abs_error": 4.540590126111964e-13,
+      "p99_tau_abs_error": 5.324141127971417e-13,
+      "max_tau_abs_error": 5.520028878436278e-13
+    },
+    "F128_f32_cross": {
+      "rays": 12,
+      "topology_mismatches": 11,
+      "p99_boundary_time_error": 0.010511693761586666,
+      "p95_tau_abs_error": 1.1814194067483168e-11,
+      "p99_tau_abs_error": 2.250175157314517e-11,
+      "max_tau_abs_error": 2.517364094956065e-11
+    },
+    "F128_mixed64": {
+      "rays": 12,
+      "topology_mismatches": 9,
+      "p99_boundary_time_error": 6.698611727173898e-07,
+      "p95_tau_abs_error": 5.728750807065807e-15,
+      "p99_tau_abs_error": 6.119549311733863e-15,
+      "max_tau_abs_error": 6.217248937900877e-15
+    }
+  },
+  "conclusion": "Mixed64 clocks are the only tested mode that preserves event topology consistently. Float32 cross multiplication does not fix lost ray-state precision. Pure-float32 topology failures often have small optical-depth impact, but exact A3 requires mixed-precision clocks."
+}

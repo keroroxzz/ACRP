@@ -1,0 +1,115 @@
+{
+  "rays_per_category": 25,
+  "configs": [
+    {
+      "tag": "F=16",
+      "F": 16,
+      "world": 3,
+      "sigma": 1.2,
+      "sparsity": 0.35,
+      "full32_tail": 0.000611788702596261,
+      "decision64_tail": 2.432000700380854e-06,
+      "arith_floor": 1.3979742452541188e-06,
+      "tail_reduction": 251.55778224095664
+    },
+    {
+      "tag": "F=32",
+      "F": 32,
+      "world": 3,
+      "sigma": 1.2,
+      "sparsity": 0.35,
+      "full32_tail": 0.0007194034709376851,
+      "decision64_tail": 2.959473787811362e-06,
+      "arith_floor": 2.628674576676815e-06,
+      "tail_reduction": 243.084927428842
+    },
+    {
+      "tag": "F=64",
+      "F": 64,
+      "world": 3,
+      "sigma": 1.2,
+      "sparsity": 0.35,
+      "full32_tail": 0.00044274686184353484,
+      "decision64_tail": 2.6383154780873497e-06,
+      "arith_floor": 1.9102370112378253e-06,
+      "tail_reduction": 167.81422294672083
+    },
+    {
+      "tag": "F=128",
+      "F": 128,
+      "world": 3,
+      "sigma": 1.2,
+      "sparsity": 0.35,
+      "full32_tail": 8.802233069216125e-05,
+      "decision64_tail": 5.967453623689778e-06,
+      "arith_floor": 2.9355957553711676e-06,
+      "tail_reduction": 14.750400462724594
+    },
+    {
+      "tag": "world=2",
+      "F": 64,
+      "world": 2,
+      "sigma": 1.2,
+      "sparsity": 0.35,
+      "full32_tail": 0.00021289988315620345,
+      "decision64_tail": 1.490592422381809e-06,
+      "arith_floor": 1.190549907770233e-06,
+      "tail_reduction": 142.82903895084343
+    },
+    {
+      "tag": "world=4",
+      "F": 64,
+      "world": 4,
+      "sigma": 1.2,
+      "sparsity": 0.35,
+      "full32_tail": 3.084416242282728e-05,
+      "decision64_tail": 7.314914338252265e-06,
+      "arith_floor": 3.1686138353137494e-06,
+      "tail_reduction": 4.216612935784126
+    },
+    {
+      "tag": "sigma=0.5",
+      "F": 64,
+      "world": 3,
+      "sigma": 0.5,
+      "sparsity": 0.35,
+      "full32_tail": 0.00018453746374613722,
+      "decision64_tail": 1.4790629316863146e-06,
+      "arith_floor": 9.695117058061697e-07,
+      "tail_reduction": 124.76647192810226
+    },
+    {
+      "tag": "sigma=3.0",
+      "F": 64,
+      "world": 3,
+      "sigma": 3.0,
+      "sparsity": 0.35,
+      "full32_tail": 0.0011065691313856263,
+      "decision64_tail": 1.125856338290987e-05,
+      "arith_floor": 5.578651651738653e-06,
+      "tail_reduction": 98.28688561325346
+    },
+    {
+      "tag": "sparsity=0.20",
+      "F": 64,
+      "world": 3,
+      "sigma": 1.2,
+      "sparsity": 0.2,
+      "full32_tail": 0.0004531423442886151,
+      "decision64_tail": 3.832471226594691e-06,
+      "arith_floor": 2.817097503271526e-06,
+      "tail_reduction": 118.23763767464753
+    },
+    {
+      "tag": "sparsity=0.60",
+      "F": 64,
+      "world": 3,
+      "sigma": 1.2,
+      "sparsity": 0.6,
+      "full32_tail": 0.0001594434528047195,
+      "decision64_tail": 6.5280981944582095e-06,
+      "arith_floor": 1.5355589590981822e-06,
+      "tail_reduction": 24.42418114054614
+    }
+  ]
+}

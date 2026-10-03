@@ -1,0 +1,172 @@
+{
+  "seed": 20260718,
+  "rays": 25,
+  "octaves": 4,
+  "frequencies": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "amplitudes": [
+    1.0,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "method_A_mean_segments": 40.64,
+  "method_A_mean_octave_integrals": 162.56,
+  "method_B_results": {
+    "K1": {
+      "mean_abs_tau_error": 1.1648804889251894,
+      "p95_abs_tau_error": 1.871413714390969,
+      "max_abs_tau_error": 2.0355976245571865,
+      "p95_transmittance_error": 0.474524355331278,
+      "max_transmittance_error": 0.4921713023531036,
+      "mean_segments": 4.96,
+      "mean_octave_integrals": 4.96,
+      "mean_bound_queries": 0.0,
+      "segment_reduction_vs_A": 0.8779527559055118,
+      "integral_reduction_vs_A": 0.969488188976378
+    },
+    "K2": {
+      "mean_abs_tau_error": 0.47455125861988007,
+      "p95_abs_tau_error": 0.7815544529357483,
+      "max_abs_tau_error": 0.8297121900613895,
+      "p95_transmittance_error": 0.12622091150340903,
+      "max_transmittance_error": 0.13565228808689522,
+      "mean_segments": 10.12,
+      "mean_octave_integrals": 20.24,
+      "mean_bound_queries": 0.0,
+      "segment_reduction_vs_A": 0.7509842519685039,
+      "integral_reduction_vs_A": 0.875492125984252
+    },
+    "K3": {
+      "mean_abs_tau_error": 0.1657839919706587,
+      "p95_abs_tau_error": 0.2805399929274256,
+      "max_abs_tau_error": 0.2995376658007505,
+      "p95_transmittance_error": 0.040053554522035156,
+      "max_transmittance_error": 0.04058917379556237,
+      "mean_segments": 20.44,
+      "mean_octave_integrals": 61.32,
+      "mean_bound_queries": 0.0,
+      "segment_reduction_vs_A": 0.4970472440944882,
+      "integral_reduction_vs_A": 0.6227854330708662
+    }
+  },
+  "method_C_results": {
+    "B1_eps0.1": {
+      "mean_abs_tau_error": 2.753353101070388e-16,
+      "p95_abs_tau_error": 1.1546319456101603e-15,
+      "max_abs_tau_error": 1.3322676295501878e-15,
+      "p95_transmittance_error": 5.551115123125783e-17,
+      "max_transmittance_error": 1.1102230246251565e-16,
+      "mean_segments": 76.16,
+      "mean_octave_integrals": 249.08,
+      "mean_bound_queries": 55.56,
+      "segment_reduction_vs_A": -0.8740157480314958,
+      "integral_reduction_vs_A": -0.5322342519685039,
+      "declared_tau_bound": 0.1,
+      "bound_respected": true
+    },
+    "B1_eps0.03": {
+      "mean_abs_tau_error": 2.753353101070388e-16,
+      "p95_abs_tau_error": 1.1546319456101603e-15,
+      "max_abs_tau_error": 1.3322676295501878e-15,
+      "p95_transmittance_error": 5.551115123125783e-17,
+      "max_transmittance_error": 1.1102230246251565e-16,
+      "mean_segments": 76.16,
+      "mean_octave_integrals": 249.08,
+      "mean_bound_queries": 55.56,
+      "segment_reduction_vs_A": -0.8740157480314958,
+      "integral_reduction_vs_A": -0.5322342519685039,
+      "declared_tau_bound": 0.03,
+      "bound_respected": true
+    },
+    "B1_eps0.01": {
+      "mean_abs_tau_error": 2.753353101070388e-16,
+      "p95_abs_tau_error": 1.1546319456101603e-15,
+      "max_abs_tau_error": 1.3322676295501878e-15,
+      "p95_transmittance_error": 5.551115123125783e-17,
+      "max_transmittance_error": 1.1102230246251565e-16,
+      "mean_segments": 76.16,
+      "mean_octave_integrals": 249.08,
+      "mean_bound_queries": 55.56,
+      "segment_reduction_vs_A": -0.8740157480314958,
+      "integral_reduction_vs_A": -0.5322342519685039,
+      "declared_tau_bound": 0.01,
+      "bound_respected": true
+    },
+    "B1_eps0.003": {
+      "mean_abs_tau_error": 2.753353101070388e-16,
+      "p95_abs_tau_error": 1.1546319456101603e-15,
+      "max_abs_tau_error": 1.3322676295501878e-15,
+      "p95_transmittance_error": 5.551115123125783e-17,
+      "max_transmittance_error": 1.1102230246251565e-16,
+      "mean_segments": 76.16,
+      "mean_octave_integrals": 249.08,
+      "mean_bound_queries": 55.56,
+      "segment_reduction_vs_A": -0.8740157480314958,
+      "integral_reduction_vs_A": -0.5322342519685039,
+      "declared_tau_bound": 0.003,
+      "bound_respected": true
+    },
+    "B2_eps0.1": {
+      "mean_abs_tau_error": 2.6645352591003756e-16,
+      "p95_abs_tau_error": 1.1546319456101603e-15,
+      "max_abs_tau_error": 1.3322676295501878e-15,
+      "p95_transmittance_error": 5.551115123125783e-17,
+      "max_transmittance_error": 1.1102230246251565e-16,
+      "mean_segments": 71.2,
+      "mean_octave_integrals": 244.12,
+      "mean_bound_queries": 40.68,
+      "segment_reduction_vs_A": -0.7519685039370079,
+      "integral_reduction_vs_A": -0.5017224409448819,
+      "declared_tau_bound": 0.1,
+      "bound_respected": true
+    },
+    "B2_eps0.03": {
+      "mean_abs_tau_error": 2.6645352591003756e-16,
+      "p95_abs_tau_error": 1.1546319456101603e-15,
+      "max_abs_tau_error": 1.3322676295501878e-15,
+      "p95_transmittance_error": 5.551115123125783e-17,
+      "max_transmittance_error": 1.1102230246251565e-16,
+      "mean_segments": 71.2,
+      "mean_octave_integrals": 244.12,
+      "mean_bound_queries": 40.68,
+      "segment_reduction_vs_A": -0.7519685039370079,
+      "integral_reduction_vs_A": -0.5017224409448819,
+      "declared_tau_bound": 0.03,
+      "bound_respected": true
+    },
+    "B2_eps0.01": {
+      "mean_abs_tau_error": 2.6645352591003756e-16,
+      "p95_abs_tau_error": 1.1546319456101603e-15,
+      "max_abs_tau_error": 1.3322676295501878e-15,
+      "p95_transmittance_error": 5.551115123125783e-17,
+      "max_transmittance_error": 1.1102230246251565e-16,
+      "mean_segments": 71.2,
+      "mean_octave_integrals": 244.12,
+      "mean_bound_queries": 40.68,
+      "segment_reduction_vs_A": -0.7519685039370079,
+      "integral_reduction_vs_A": -0.5017224409448819,
+      "declared_tau_bound": 0.01,
+      "bound_respected": true
+    },
+    "B2_eps0.003": {
+      "mean_abs_tau_error": 2.6645352591003756e-16,
+      "p95_abs_tau_error": 1.1546319456101603e-15,
+      "max_abs_tau_error": 1.3322676295501878e-15,
+      "p95_transmittance_error": 5.551115123125783e-17,
+      "max_transmittance_error": 1.1102230246251565e-16,
+      "mean_segments": 71.2,
+      "mean_octave_integrals": 244.12,
+      "mean_bound_queries": 40.68,
+      "segment_reduction_vs_A": -0.7519685039370079,
+      "integral_reduction_vs_A": -0.5017224409448819,
+      "declared_tau_bound": 0.003,
+      "bound_respected": true
+    }
+  },
+  "all_bounds_respected": true
+}

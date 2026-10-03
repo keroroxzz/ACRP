@@ -1,0 +1,35 @@
+{
+  "repetitions": 4000,
+  "seed": 918,
+  "method": "resample GPU timing samples independently within each scene/variant, sum scene medians",
+  "ratios": {
+    "full": {
+      "bootstrap_percentiles_025_50_975": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "anchor": {
+      "bootstrap_percentiles_025_50_975": [
+        2.772521904560604,
+        2.782729247500648,
+        2.7927770279709163
+      ]
+    },
+    "v1": {
+      "bootstrap_percentiles_025_50_975": [
+        5.123076555399038,
+        5.143879665889845,
+        5.162900742924709
+      ]
+    },
+    "v2": {
+      "bootstrap_percentiles_025_50_975": [
+        5.352127320232562,
+        5.367637955406788,
+        5.383959908276803
+      ]
+    }
+  }
+}

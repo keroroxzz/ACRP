@@ -1,0 +1,89 @@
+{
+  "seed": 20260718,
+  "rays": 700,
+  "frequencies": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "results": {
+    "K3": {
+      "global": {
+        "mean_signed_tau_error": 0.0007317143092164583,
+        "mean_abs_tau_error": 0.017653051536311127,
+        "p95_abs_tau_error": 0.04813270209250967,
+        "p99_abs_tau_error": 0.06339736237513074,
+        "p95_transmittance_error": 0.007815789325839076,
+        "p99_transmittance_error": 0.012924102364231775,
+        "grid_voxels": 1
+      },
+      "R1": {
+        "mean_signed_tau_error": 0.00066658401229212,
+        "mean_abs_tau_error": 0.017301831696477914,
+        "p95_abs_tau_error": 0.044910919630376606,
+        "p99_abs_tau_error": 0.059726942537240375,
+        "p95_transmittance_error": 0.00796077610646263,
+        "p99_transmittance_error": 0.01286714983425189,
+        "grid_voxels": 27
+      },
+      "R2": {
+        "mean_signed_tau_error": 0.0006179508276350455,
+        "mean_abs_tau_error": 0.016783982912071924,
+        "p95_abs_tau_error": 0.042462240157824085,
+        "p99_abs_tau_error": 0.061858264296725696,
+        "p95_transmittance_error": 0.0074710493442297,
+        "p99_transmittance_error": 0.012498736185196327,
+        "grid_voxels": 216
+      },
+      "R4": {
+        "mean_signed_tau_error": 0.0010657940587404957,
+        "mean_abs_tau_error": 0.01507046079095946,
+        "p95_abs_tau_error": 0.03852004729080136,
+        "p99_abs_tau_error": 0.057368746951884646,
+        "p95_transmittance_error": 0.006804277490227947,
+        "p99_transmittance_error": 0.011172162144836599,
+        "grid_voxels": 1728
+      }
+    },
+    "K4": {
+      "global": {
+        "mean_signed_tau_error": -4.3308986017792845e-05,
+        "mean_abs_tau_error": 0.005777855426660363,
+        "p95_abs_tau_error": 0.014587030929233498,
+        "p99_abs_tau_error": 0.0219576645503493,
+        "p95_transmittance_error": 0.002815047523596809,
+        "p99_transmittance_error": 0.004167026450350368,
+        "grid_voxels": 1
+      },
+      "R1": {
+        "mean_signed_tau_error": -9.049598405085905e-05,
+        "mean_abs_tau_error": 0.005755177818484358,
+        "p95_abs_tau_error": 0.014839081097479685,
+        "p99_abs_tau_error": 0.02194377922196705,
+        "p95_transmittance_error": 0.002818847806669296,
+        "p99_transmittance_error": 0.004253066656848176,
+        "grid_voxels": 27
+      },
+      "R2": {
+        "mean_signed_tau_error": -6.219842993554232e-05,
+        "mean_abs_tau_error": 0.005712176777961031,
+        "p95_abs_tau_error": 0.014477091776399283,
+        "p99_abs_tau_error": 0.02066994288034628,
+        "p95_transmittance_error": 0.0028241704124617596,
+        "p99_transmittance_error": 0.004390584754549395,
+        "grid_voxels": 216
+      },
+      "R4": {
+        "mean_signed_tau_error": 8.619128569807818e-05,
+        "mean_abs_tau_error": 0.00549055345599594,
+        "p95_abs_tau_error": 0.013457151883000987,
+        "p99_abs_tau_error": 0.0207163847581521,
+        "p95_transmittance_error": 0.002747146270521128,
+        "p99_transmittance_error": 0.003914814748679401,
+        "grid_voxels": 1728
+      }
+    }
+  }
+}

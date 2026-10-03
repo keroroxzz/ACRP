@@ -1,0 +1,12 @@
+{
+    "Gate 2A: Rayleigh Normalization": "PASS",
+    "Gate 2B: Chapman Beam Alignment": "PASS",
+    "Gate 2C: Phase Reciprocity": "PASS",
+    "Gate 2D: Albedo Sanity": "PASS",
+    "Gate 2E: Quadrature Convergence": "PASS",
+    "Gate 2F: Beer-Lambert Multi-point": "PASS",
+    "Gate 2G: Vacuum Limit": "PASS",
+    "Gate 2H: Plane-Parallel Limit": "PASS",
+    "Gate 2J: Energy Reciprocity": "PASS",
+    "Gate 2I: SSLC Domain Mapping": "PASS"
+}

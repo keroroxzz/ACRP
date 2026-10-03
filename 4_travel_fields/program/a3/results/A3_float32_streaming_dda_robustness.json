@@ -1,0 +1,466 @@
+{
+  "seed": 20260718,
+  "frequency_maxima": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "world_offsets": [
+    0.0,
+    1000.0,
+    100000.0,
+    10000000.0
+  ],
+  "modes": [
+    "world32",
+    "local32_from_world32",
+    "local32_direct"
+  ],
+  "total_records": 8640,
+  "topology_mismatches": {
+    "world32": 1772,
+    "local32_from_world32": 1772,
+    "local32_direct": 759
+  },
+  "cases": {
+    "F16_offset0_world32": {
+      "rays": 180,
+      "topology_mismatches": 6,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 6,
+      "max_finite_boundary_time_error": 1.0138377347423955e-05,
+      "p99_finite_boundary_time_error": 4.600057105017542e-06,
+      "failures": {}
+    },
+    "F16_offset0_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 6,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 6,
+      "max_finite_boundary_time_error": 1.0138377347423955e-05,
+      "p99_finite_boundary_time_error": 4.600057105017542e-06,
+      "failures": {}
+    },
+    "F16_offset0_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 6,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 6,
+      "max_finite_boundary_time_error": 1.0138377347423955e-05,
+      "p99_finite_boundary_time_error": 4.600057105017542e-06,
+      "failures": {}
+    },
+    "F16_offset1000_world32": {
+      "rays": 180,
+      "topology_mismatches": 21,
+      "mask_mismatches": 2,
+      "event_count_mismatch_total": 20,
+      "max_finite_boundary_time_error": 0.0010694600825242873,
+      "p99_finite_boundary_time_error": 0.0008332443264542622,
+      "failures": {}
+    },
+    "F16_offset1000_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 21,
+      "mask_mismatches": 2,
+      "event_count_mismatch_total": 20,
+      "max_finite_boundary_time_error": 0.0010694600825242873,
+      "p99_finite_boundary_time_error": 0.0008332443264542622,
+      "failures": {}
+    },
+    "F16_offset1000_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 5,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 5,
+      "max_finite_boundary_time_error": 3.8648653823969426e-06,
+      "p99_finite_boundary_time_error": 2.832884133319167e-06,
+      "failures": {}
+    },
+    "F16_offset100000_world32": {
+      "rays": 180,
+      "topology_mismatches": 132,
+      "mask_mismatches": 325,
+      "event_count_mismatch_total": 80,
+      "max_finite_boundary_time_error": 0.0769611397375094,
+      "p99_finite_boundary_time_error": 0.06940579662095193,
+      "failures": {}
+    },
+    "F16_offset100000_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 132,
+      "mask_mismatches": 325,
+      "event_count_mismatch_total": 80,
+      "max_finite_boundary_time_error": 0.0769611397375094,
+      "p99_finite_boundary_time_error": 0.06940579662095193,
+      "failures": {}
+    },
+    "F16_offset100000_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 5,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 5,
+      "max_finite_boundary_time_error": 3.5374211435623693e-06,
+      "p99_finite_boundary_time_error": 2.282810107399057e-06,
+      "failures": {}
+    },
+    "F16_offset1e+07_world32": {
+      "rays": 180,
+      "topology_mismatches": 180,
+      "mask_mismatches": 2151,
+      "event_count_mismatch_total": 285,
+      "max_finite_boundary_time_error": 0.14387494366458498,
+      "p99_finite_boundary_time_error": 0.13055189196461323,
+      "failures": {}
+    },
+    "F16_offset1e+07_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 180,
+      "mask_mismatches": 2151,
+      "event_count_mismatch_total": 285,
+      "max_finite_boundary_time_error": 0.14387494366458498,
+      "p99_finite_boundary_time_error": 0.13055189196461323,
+      "failures": {}
+    },
+    "F16_offset1e+07_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 6,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 6,
+      "max_finite_boundary_time_error": 3.288965827685786e-06,
+      "p99_finite_boundary_time_error": 2.4586046399655096e-06,
+      "failures": {}
+    },
+    "F32_offset0_world32": {
+      "rays": 180,
+      "topology_mismatches": 19,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 20,
+      "max_finite_boundary_time_error": 4.160382596651857e-06,
+      "p99_finite_boundary_time_error": 3.2344696434094564e-06,
+      "failures": {}
+    },
+    "F32_offset0_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 19,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 20,
+      "max_finite_boundary_time_error": 4.160382596651857e-06,
+      "p99_finite_boundary_time_error": 3.2344696434094564e-06,
+      "failures": {}
+    },
+    "F32_offset0_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 19,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 20,
+      "max_finite_boundary_time_error": 4.160382596651857e-06,
+      "p99_finite_boundary_time_error": 3.2344696434094564e-06,
+      "failures": {}
+    },
+    "F32_offset1000_world32": {
+      "rays": 180,
+      "topology_mismatches": 35,
+      "mask_mismatches": 117,
+      "event_count_mismatch_total": 28,
+      "max_finite_boundary_time_error": 0.044404763382129175,
+      "p99_finite_boundary_time_error": 0.019304087521608667,
+      "failures": {}
+    },
+    "F32_offset1000_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 35,
+      "mask_mismatches": 117,
+      "event_count_mismatch_total": 28,
+      "max_finite_boundary_time_error": 0.044404763382129175,
+      "p99_finite_boundary_time_error": 0.019304087521608667,
+      "failures": {}
+    },
+    "F32_offset1000_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 16,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 18,
+      "max_finite_boundary_time_error": 9.657634509885327e-06,
+      "p99_finite_boundary_time_error": 3.4922947000293224e-06,
+      "failures": {}
+    },
+    "F32_offset100000_world32": {
+      "rays": 180,
+      "topology_mismatches": 161,
+      "mask_mismatches": 1874,
+      "event_count_mismatch_total": 98,
+      "max_finite_boundary_time_error": 0.04605975468503409,
+      "p99_finite_boundary_time_error": 0.04354218899115872,
+      "failures": {}
+    },
+    "F32_offset100000_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 161,
+      "mask_mismatches": 1874,
+      "event_count_mismatch_total": 98,
+      "max_finite_boundary_time_error": 0.04605975468503409,
+      "p99_finite_boundary_time_error": 0.04354218899115872,
+      "failures": {}
+    },
+    "F32_offset100000_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 14,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 14,
+      "max_finite_boundary_time_error": 1.4936265319676068e-05,
+      "p99_finite_boundary_time_error": 4.155787298687479e-06,
+      "failures": {}
+    },
+    "F32_offset1e+07_world32": {
+      "rays": 180,
+      "topology_mismatches": 180,
+      "mask_mismatches": 2676,
+      "event_count_mismatch_total": 515,
+      "max_finite_boundary_time_error": 0.06324316858180268,
+      "p99_finite_boundary_time_error": 0.059621650224683596,
+      "failures": {}
+    },
+    "F32_offset1e+07_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 180,
+      "mask_mismatches": 2676,
+      "event_count_mismatch_total": 515,
+      "max_finite_boundary_time_error": 0.06324316858180268,
+      "p99_finite_boundary_time_error": 0.059621650224683596,
+      "failures": {}
+    },
+    "F32_offset1e+07_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 10,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 10,
+      "max_finite_boundary_time_error": 5.905691832452931e-06,
+      "p99_finite_boundary_time_error": 3.446405572073986e-06,
+      "failures": {}
+    },
+    "F64_offset0_world32": {
+      "rays": 180,
+      "topology_mismatches": 46,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 56,
+      "max_finite_boundary_time_error": 2.1078344135005977e-05,
+      "p99_finite_boundary_time_error": 6.929218940552296e-06,
+      "failures": {}
+    },
+    "F64_offset0_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 46,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 56,
+      "max_finite_boundary_time_error": 2.1078344135005977e-05,
+      "p99_finite_boundary_time_error": 6.929218940552296e-06,
+      "failures": {}
+    },
+    "F64_offset0_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 46,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 56,
+      "max_finite_boundary_time_error": 2.1078344135005977e-05,
+      "p99_finite_boundary_time_error": 6.929218940552296e-06,
+      "failures": {}
+    },
+    "F64_offset1000_world32": {
+      "rays": 180,
+      "topology_mismatches": 68,
+      "mask_mismatches": 602,
+      "event_count_mismatch_total": 61,
+      "max_finite_boundary_time_error": 0.02153143291297077,
+      "p99_finite_boundary_time_error": 0.02091616223666429,
+      "failures": {}
+    },
+    "F64_offset1000_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 68,
+      "mask_mismatches": 602,
+      "event_count_mismatch_total": 61,
+      "max_finite_boundary_time_error": 0.02153143291297077,
+      "p99_finite_boundary_time_error": 0.02091616223666429,
+      "failures": {}
+    },
+    "F64_offset1000_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 56,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 67,
+      "max_finite_boundary_time_error": 1.4814999241608007e-05,
+      "p99_finite_boundary_time_error": 3.6723008528038954e-06,
+      "failures": {}
+    },
+    "F64_offset100000_world32": {
+      "rays": 180,
+      "topology_mismatches": 155,
+      "mask_mismatches": 5808,
+      "event_count_mismatch_total": 103,
+      "max_finite_boundary_time_error": 0.024896938312638284,
+      "p99_finite_boundary_time_error": 0.021834322204920313,
+      "failures": {}
+    },
+    "F64_offset100000_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 155,
+      "mask_mismatches": 5808,
+      "event_count_mismatch_total": 103,
+      "max_finite_boundary_time_error": 0.024896938312638284,
+      "p99_finite_boundary_time_error": 0.021834322204920313,
+      "failures": {}
+    },
+    "F64_offset100000_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 52,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 70,
+      "max_finite_boundary_time_error": 1.783423932621986e-05,
+      "p99_finite_boundary_time_error": 5.054041701395564e-06,
+      "failures": {}
+    },
+    "F64_offset1e+07_world32": {
+      "rays": 180,
+      "topology_mismatches": 180,
+      "mask_mismatches": 4854,
+      "event_count_mismatch_total": 1221,
+      "max_finite_boundary_time_error": 0.031464763610551394,
+      "p99_finite_boundary_time_error": 0.03102036207947556,
+      "failures": {}
+    },
+    "F64_offset1e+07_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 180,
+      "mask_mismatches": 4854,
+      "event_count_mismatch_total": 1221,
+      "max_finite_boundary_time_error": 0.031464763610551394,
+      "p99_finite_boundary_time_error": 0.03102036207947556,
+      "failures": {}
+    },
+    "F64_offset1e+07_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 53,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 69,
+      "max_finite_boundary_time_error": 1.717770486742154e-05,
+      "p99_finite_boundary_time_error": 4.9244167077056025e-06,
+      "failures": {}
+    },
+    "F128_offset0_world32": {
+      "rays": 180,
+      "topology_mismatches": 107,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 211,
+      "max_finite_boundary_time_error": 5.726082042301073e-06,
+      "p99_finite_boundary_time_error": 5.07986949962458e-06,
+      "failures": {}
+    },
+    "F128_offset0_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 107,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 211,
+      "max_finite_boundary_time_error": 5.726082042301073e-06,
+      "p99_finite_boundary_time_error": 5.07986949962458e-06,
+      "failures": {}
+    },
+    "F128_offset0_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 107,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 211,
+      "max_finite_boundary_time_error": 5.726082042301073e-06,
+      "p99_finite_boundary_time_error": 5.07986949962458e-06,
+      "failures": {}
+    },
+    "F128_offset1000_world32": {
+      "rays": 180,
+      "topology_mismatches": 143,
+      "mask_mismatches": 808,
+      "event_count_mismatch_total": 279,
+      "max_finite_boundary_time_error": 0.010858320344670602,
+      "p99_finite_boundary_time_error": 0.009861859903133485,
+      "failures": {}
+    },
+    "F128_offset1000_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 143,
+      "mask_mismatches": 808,
+      "event_count_mismatch_total": 279,
+      "max_finite_boundary_time_error": 0.010858320344670602,
+      "p99_finite_boundary_time_error": 0.009861859903133485,
+      "failures": {}
+    },
+    "F128_offset1000_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 134,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 277,
+      "max_finite_boundary_time_error": 3.192395189266506e-05,
+      "p99_finite_boundary_time_error": 2.0216538968353886e-05,
+      "failures": {}
+    },
+    "F128_offset100000_world32": {
+      "rays": 180,
+      "topology_mismatches": 159,
+      "mask_mismatches": 9640,
+      "event_count_mismatch_total": 209,
+      "max_finite_boundary_time_error": 0.0182237638139231,
+      "p99_finite_boundary_time_error": 0.015122773424497903,
+      "failures": {}
+    },
+    "F128_offset100000_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 159,
+      "mask_mismatches": 9640,
+      "event_count_mismatch_total": 209,
+      "max_finite_boundary_time_error": 0.0182237638139231,
+      "p99_finite_boundary_time_error": 0.015122773424497903,
+      "failures": {}
+    },
+    "F128_offset100000_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 120,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 256,
+      "max_finite_boundary_time_error": 2.8266393570675064e-05,
+      "p99_finite_boundary_time_error": 1.8169353939914088e-05,
+      "failures": {}
+    },
+    "F128_offset1e+07_world32": {
+      "rays": 180,
+      "topology_mismatches": 180,
+      "mask_mismatches": 5483,
+      "event_count_mismatch_total": 1979,
+      "max_finite_boundary_time_error": 0.016042213427214236,
+      "p99_finite_boundary_time_error": 0.01566970111039208,
+      "failures": {}
+    },
+    "F128_offset1e+07_local32_from_world32": {
+      "rays": 180,
+      "topology_mismatches": 180,
+      "mask_mismatches": 5483,
+      "event_count_mismatch_total": 1979,
+      "max_finite_boundary_time_error": 0.016042213427214236,
+      "p99_finite_boundary_time_error": 0.01566970111039208,
+      "failures": {}
+    },
+    "F128_offset1e+07_local32_direct": {
+      "rays": 180,
+      "topology_mismatches": 110,
+      "mask_mismatches": 0,
+      "event_count_mismatch_total": 249,
+      "max_finite_boundary_time_error": 1.2686296499531124e-05,
+      "p99_finite_boundary_time_error": 5.397985214239422e-06,
+      "failures": {}
+    }
+  },
+  "interpretation": {
+    "world32": "Large world coordinates are directly quantized in float32.",
+    "local32_from_world32": "World origin and volume origin are each quantized before subtraction.",
+    "local32_direct": "Volume-local origin is formed in float64/host precision and then supplied to float32 traversal."
+  },
+  "local32_direct_all_regimes_passed": false
+}

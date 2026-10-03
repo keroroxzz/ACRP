@@ -1,0 +1,15 @@
+{
+    "Gate 3A-0: DOM Weights Normalization": "PASS",
+    "Gate 3A-1: Phase Probability Normalization": "PASS",
+    "Gate 3A-2: Phase Reciprocity": "PASS",
+    "Gate 3A-3: DOM Reciprocity Matrix": "PASS",
+    "Gate 3B-0: Plane SOS Energy Conservation": "PASS",
+    "Gate 3B-1: SOS Convergence Rate": "PASS",
+    "Gate 3B-2: Analytic Isotropic Single Scatter": "PASS",
+    "Gate 3C-A: L1 Alignment (Same angles)": "PASS",
+    "Gate 3C-B: L1 Alignment (Full DOM)": "PASS",
+    "Gate 3D-0: Two-Stream vs Plane SOS": "PASS",
+    "Gate 3D-1: Twilight Hybrid Switch": "PASS",
+    "Gate 3E-0: Grid Richardson Extrapolation": "PASS",
+    "Gate 3E-1: DOM Angular Convergence": "PASS"
+}

@@ -1,0 +1,93 @@
+{
+  "cumulonimbus_defaults": {
+    "uCbAnvil": 4.5,
+    "uCbAnvilDens": 1.05,
+    "uCbBaseR": 0.62,
+    "uCbBillowScale": 1.18,
+    "uCbCrown": 2.2,
+    "uCbDetailWarp": 0.23,
+    "uCbLean": 0.16,
+    "uCbMacroScale": 0.48,
+    "uCbMicro": 0.045,
+    "uCbRidge": 0.11,
+    "uCbTopR": 1.18,
+    "uCbWarp": 0.72,
+    "uCbX": 6.0,
+    "uCbZ": 9.0
+  },
+  "frames_per_scene": 3,
+  "gl_version": "3.3.0 NVIDIA 551.76",
+  "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+  "phase": "H0",
+  "production_defines": {
+    "A3_CAMF": 6,
+    "A3_CAMGL": 5,
+    "A3_SUNF": 4,
+    "A3_SUNGL": 4,
+    "BIG_STEP": 0.3,
+    "INSTRUMENT": 0,
+    "JITTER_ON": 1,
+    "MAXI": 1400,
+    "METHOD": 1,
+    "SMALL_STEP": 0.06,
+    "SUN_JITTER": 0.0,
+    "SUN_STEPS": 6
+  },
+  "reference_defines": {
+    "A3_CAMF": 6,
+    "A3_CAMGL": 5,
+    "A3_SUNF": 4,
+    "A3_SUNGL": 4,
+    "BIG_STEP": 0.25,
+    "INSTRUMENT": 0,
+    "JITTER_ON": 0,
+    "MAXI": 2400,
+    "METHOD": 1,
+    "SMALL_STEP": 0.03,
+    "SUN_JITTER": 0.0,
+    "SUN_STEPS": 12
+  },
+  "resolution": [
+    320,
+    180
+  ],
+  "scenes": [
+    {
+      "gpu_ms_samples": [
+        23.88992,
+        23.621632,
+        23.656448
+      ],
+      "max_ms": 23.88992,
+      "median_ms": 23.656448,
+      "min_ms": 23.621632,
+      "p95_ms": 23.8665728,
+      "rmse_vs_reference": 0.004772007931023836,
+      "scene": "sparse_wide"
+    },
+    {
+      "gpu_ms_samples": [
+        29.336576,
+        29.903872,
+        29.944832
+      ],
+      "max_ms": 29.944832,
+      "median_ms": 29.903872,
+      "min_ms": 29.336576,
+      "p95_ms": 29.940736,
+      "rmse_vs_reference": 0.006866604555398226,
+      "scene": "low_up"
+    }
+  ],
+  "shader_path": "articles/7_hybrid_cloud_rendering/program/sky_frag.glsl",
+  "shader_sha256": "e48dc454788853b7488e620c8fa8a506fca0abb10749208a8ef9a30c1c315adc",
+  "smoke": true,
+  "summary": {
+    "max_scene_median_ms": 29.903872,
+    "median_of_scene_medians_ms": 26.780160000000002,
+    "min_scene_median_ms": 23.656448,
+    "p95_of_scene_medians_ms": 29.5915008
+  },
+  "timestamp_local": "2026-07-25T21:57:29+0800",
+  "warmup_seconds_per_scene": 0.15
+}

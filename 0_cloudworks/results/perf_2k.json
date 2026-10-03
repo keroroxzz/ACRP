@@ -1,0 +1,82 @@
+[
+ {
+  "label": "baseline (be143db)",
+  "date": "2026-07-28 21:16",
+  "resolution": [
+   2560,
+   1440
+  ],
+  "baseline": "_base.glsl",
+  "baseline_ms": 580.07,
+  "total_ms": 582.83,
+  "gain_vs_baseline_pct": -0.48,
+  "per_config": {
+   "A-g": 115.14,
+   "A-h": 95.43,
+   "A-t": 63.85,
+   "B-g": 133.03,
+   "B-h": 99.59,
+   "B-t": 75.79
+  }
+ },
+ {
+  "label": "shadow roof 2-segment (3094da3)",
+  "date": "2026-07-28 21:17",
+  "resolution": [
+   2560,
+   1440
+  ],
+  "baseline": "_base.glsl",
+  "baseline_ms": 581.62,
+  "total_ms": 392.89,
+  "gain_vs_baseline_pct": 32.45,
+  "per_config": {
+   "A-g": 65.74,
+   "A-h": 57.44,
+   "A-t": 40.69,
+   "B-g": 99.28,
+   "B-h": 76.0,
+   "B-t": 53.75
+  }
+ },
+ {
+  "label": "jitter 0.10 + light-march stride 2",
+  "date": "2026-07-28 21:17",
+  "resolution": [
+   2560,
+   1440
+  ],
+  "baseline": "_base.glsl",
+  "baseline_ms": 582.55,
+  "total_ms": 312.66,
+  "gain_vs_baseline_pct": 46.33,
+  "per_config": {
+   "A-g": 37.99,
+   "A-h": 49.18,
+   "A-t": 35.23,
+   "B-g": 80.55,
+   "B-h": 63.61,
+   "B-t": 46.1
+  }
+ },
+ {
+  "label": "jitter off + coarse light march 20 + roof span 240",
+  "date": "2026-07-28 21:24",
+  "resolution": [
+   2560,
+   1440
+  ],
+  "baseline": "_base.glsl",
+  "baseline_ms": 620.16,
+  "total_ms": 270.99,
+  "gain_vs_baseline_pct": 56.3,
+  "per_config": {
+   "A-g": 34.59,
+   "A-h": 41.44,
+   "A-t": 32.96,
+   "B-g": 66.06,
+   "B-h": 54.65,
+   "B-t": 41.29
+  }
+ }
+]

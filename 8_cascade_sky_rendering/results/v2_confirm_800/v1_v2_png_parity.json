@@ -1,0 +1,16 @@
+{
+  "A-g": true,
+  "A-h": true,
+  "A-t": true,
+  "B-g": true,
+  "B-h": true,
+  "B-t": true,
+  "preset-back": true,
+  "preset-side": true,
+  "preset-front": true,
+  "postset-back": true,
+  "postset-side": true,
+  "postset-front": true,
+  "sky-day": true,
+  "sky-twilight": true
+}

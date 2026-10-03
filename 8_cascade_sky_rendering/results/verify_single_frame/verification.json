@@ -1,0 +1,78 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+  "resolution": [
+    801,
+    451
+  ],
+  "cases": [
+    {
+      "scene": {
+        "camera": [
+          25000,
+          0,
+          0
+        ],
+        "bias": 0.4,
+        "sun": [
+          0,
+          0.9998477,
+          0.0174524
+        ],
+        "itime": 10
+      },
+      "full_display_rmse": 1.0050092896563001e-05,
+      "force_full_max_hdr": 0.0,
+      "force_interpolate_max_hdr": 3.3065226892503574e-05,
+      "force_interpolate_max_display": 5.2132194808818255e-06
+    },
+    {
+      "scene": {
+        "camera": [
+          -43000,
+          17500,
+          1200
+        ],
+        "bias": -0.4,
+        "sun": [
+          0.6,
+          0.7998,
+          0.01745
+        ],
+        "itime": 37.9
+      },
+      "full_display_rmse": 1.557565337861888e-05,
+      "force_full_max_hdr": 0.0,
+      "force_interpolate_max_hdr": 5.355488498226535e-06,
+      "force_interpolate_max_display": 4.6270867020692386e-06
+    },
+    {
+      "scene": {
+        "camera": [
+          250000,
+          -330000,
+          2700
+        ],
+        "bias": -0.5,
+        "sun": [
+          0,
+          0.9998477,
+          -0.0174524
+        ],
+        "itime": 83.3
+      },
+      "full_display_rmse": 0.00024809548631310463,
+      "force_full_max_hdr": 0.0,
+      "force_interpolate_max_hdr": 0.00023984233452623016,
+      "force_interpolate_max_display": 1.0535142192513725e-05
+    }
+  ],
+  "roof_field_max_error_metres": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "roof_field_samples_per_case": 252003,
+  "A_B_A_bit_identical": true,
+  "small_resolution_fallback_bit_identical": true,
+  "pass": true
+}

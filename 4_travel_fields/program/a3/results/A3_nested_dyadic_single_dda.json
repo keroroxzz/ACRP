@@ -1,0 +1,26 @@
+{
+  "seed": 20260718,
+  "random_rays_requested": 1000,
+  "rays_tested": 1028,
+  "adversarial_rays_tested": 28,
+  "frequencies": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "all_event_lists_match": true,
+  "event_list_mismatches": 0,
+  "max_boundary_time_difference": 0.0,
+  "mean_events_per_ray_including_entry_exit": 64.23151750972762,
+  "p95_events_per_ray": 100.0,
+  "mean_octave_reloads_multi_clock": 117.68677042801556,
+  "mean_octave_reloads_single_dda": 117.68677042801556,
+  "reload_count_difference_max": 0.0,
+  "multi_clock_state_count": 15,
+  "single_dda_clock_state_count": 3,
+  "clock_state_reduction": 0.8,
+  "max_simultaneous_octave_crossings": 5,
+  "all_tests_passed": true
+}

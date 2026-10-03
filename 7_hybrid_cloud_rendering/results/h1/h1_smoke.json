@@ -1,0 +1,114 @@
+{
+  "phase": "H1",
+  "prototype": "METHOD=2 coarse-presence to fine-DDA",
+  "timestamp_local": "2026-07-26T10:02:53+0800",
+  "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+  "resolution": [
+    320,
+    180
+  ],
+  "frames_per_scene": 3,
+  "shader_sha256": "157d8417a8ad7b97468231b2ef5032d156156ab6c53ed63ce398b406a8924893",
+  "macro_grid": {
+    "dimensions_xyz": [
+      96,
+      16,
+      128
+    ],
+    "origin_xyz": [
+      -48.0,
+      0.5,
+      -32.0
+    ],
+    "cell_size_xyz": [
+      1.0,
+      0.46875,
+      1.0
+    ],
+    "samples_per_cell": 64,
+    "gpu_build_ms": 28.678143999999996
+  },
+  "h1_defines": {
+    "METHOD": 2,
+    "SUN_STEPS": 6,
+    "SMALL_STEP": 0.06,
+    "BIG_STEP": 0.3,
+    "MAXI": 1400,
+    "JITTER_ON": 1,
+    "SUN_JITTER": 0.0,
+    "INSTRUMENT": 0,
+    "A3_CAMF": 6,
+    "A3_CAMGL": 5,
+    "A3_SUNF": 4,
+    "A3_SUNGL": 4,
+    "USE_MACRO_TEX": 1,
+    "BUILD_BOUNDS": 0
+  },
+  "gates": {
+    "zero_missed_support": true,
+    "p95_intervals_at_most_4": true,
+    "density_evaluation_reduction_2x": true,
+    "grazing_stable": null,
+    "macro_build_under_1_5_ms": false
+  },
+  "scenes": [
+    {
+      "scene": "sparse_wide",
+      "gpu_ms_samples": [
+        9.570304,
+        9.510912,
+        9.547776
+      ],
+      "median_ms": 9.547776,
+      "p95_ms": 9.5680512,
+      "rmse_vs_h0_production": 0.05277194455265999,
+      "mean_evaluations_per_ray": 42.80531311035156,
+      "p95_evaluations_per_ray": 128.0,
+      "mean_total_procedural_evaluations_per_ray": 175.68629455566406,
+      "p95_total_procedural_evaluations_per_ray": 468.0,
+      "h0_mean_evaluations_per_ray": 87.31765747070312,
+      "h0_p95_evaluations_per_ray": 365.0,
+      "h0_mean_total_procedural_evaluations_per_ray": 263.4757385253906,
+      "evaluation_reduction_vs_h0": 2.0398788452148438,
+      "mean_active_intervals_per_ray": 1.9660589694976807,
+      "p95_active_intervals_per_ray": 4.0,
+      "mean_active_length": 7.697096824645996,
+      "p95_active_length": 23.040029525756836,
+      "active_ray_fraction": 1.0,
+      "missed_support_pixels": 0,
+      "alpha_missed_pixels": 86,
+      "reference_support_pixels": 8518,
+      "false_empty_rate": 0.0,
+      "max_active_intervals": 7.0
+    },
+    {
+      "scene": "low_up",
+      "gpu_ms_samples": [
+        7.410688,
+        7.406592,
+        7.40864
+      ],
+      "median_ms": 7.40864,
+      "p95_ms": 7.410483200000001,
+      "rmse_vs_h0_production": 0.038806281983852386,
+      "mean_evaluations_per_ray": 33.37739562988281,
+      "p95_evaluations_per_ray": 87.0,
+      "mean_total_procedural_evaluations_per_ray": 160.4051513671875,
+      "p95_total_procedural_evaluations_per_ray": 372.0,
+      "h0_mean_evaluations_per_ray": 169.82684326171875,
+      "h0_p95_evaluations_per_ray": 605.0,
+      "h0_mean_total_procedural_evaluations_per_ray": 418.6728210449219,
+      "evaluation_reduction_vs_h0": 5.088079452514648,
+      "mean_active_intervals_per_ray": 1.6900520324707031,
+      "p95_active_intervals_per_ray": 4.0,
+      "mean_active_length": 6.002358913421631,
+      "p95_active_length": 15.660018920898438,
+      "active_ray_fraction": 0.9402604166666667,
+      "missed_support_pixels": 0,
+      "alpha_missed_pixels": 229,
+      "reference_support_pixels": 12723,
+      "false_empty_rate": 0.0,
+      "max_active_intervals": 8.0
+    }
+  ]
+}

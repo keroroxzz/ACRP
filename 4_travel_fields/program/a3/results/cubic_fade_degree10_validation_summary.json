@@ -1,0 +1,22 @@
+{
+  "seed": 20260718,
+  "random_cases": 10000,
+  "density_samples": 70000,
+  "max_density_abs_error": 3.774758283725532e-15,
+  "max_density_rel_error": 3.7297299474722325e-15,
+  "max_tau_abs_error": 7.105427357601002e-15,
+  "max_tau_rel_error": 2.656982620965513e-15,
+  "max_inverse_s_error": 3.0075752444069792e-09,
+  "max_inverse_tau_residual": 1.468638544110945e-10,
+  "max_monotonicity_violation": 0.0,
+  "inversion_failures": 0,
+  "mean_newton_iterations": 2.2941,
+  "p95_newton_iterations": 4.0,
+  "max_newton_iterations": 6,
+  "mean_fallbacks": 0.0,
+  "p95_fallbacks": 0.0,
+  "max_fallbacks": 0,
+  "plateau_cases_passed": true,
+  "constant_cases_passed": true,
+  "axis_aligned_cases_passed": true
+}

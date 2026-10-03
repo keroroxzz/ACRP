@@ -1,0 +1,21 @@
+{
+  "seed": 20260718,
+  "rays": 400,
+  "octaves": 5,
+  "frequencies": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "p99_tau_error_A3_vs_A0": 4.7912296352592386e-12,
+  "max_tau_error_A3_vs_A0": 5.6776805479330505e-12,
+  "A0_mean_segments": 64.3475,
+  "A0_mean_polynomial_rebuilds": 321.7375,
+  "A3_mean_segments": 64.3475,
+  "A3_mean_cell_reloads": 124.825,
+  "A3_mean_density_evaluations": 1608.6875,
+  "cell_reload_reduction": 0.6120284393333074,
+  "all_tests_passed": true
+}

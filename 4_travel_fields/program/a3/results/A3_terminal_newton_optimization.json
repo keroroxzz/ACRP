@@ -1,0 +1,17 @@
+{
+  "seed": 20260718,
+  "cases": 500,
+  "octaves": 5,
+  "max_distance_error_vs_GL5_bisection": 1.4639578438391254e-10,
+  "p99_distance_error_vs_GL5_bisection": 1.3306803658963418e-10,
+  "mean_newton_iterations": 3.04,
+  "p95_newton_iterations": 4.0,
+  "max_newton_iterations": 4,
+  "mean_newton_fallbacks": 0.0,
+  "max_newton_fallbacks": 0,
+  "mean_GL5_bisection_density_evals": 700.0,
+  "mean_terminal_octave_polynomial_builds": 5.0,
+  "mean_segments_before_terminal": 31.858,
+  "estimated_terminal_density_eval_reduction": 0.9928571428571429,
+  "all_tests_passed": true
+}

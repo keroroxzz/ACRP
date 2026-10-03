@@ -1,0 +1,13 @@
+{
+  "seed": 20260718,
+  "rays_tested": 240,
+  "stream_mismatches": 0,
+  "max_stream_time_error": 0.0,
+  "max_repeat_tau_error": 0.0,
+  "max_repeat_event_error": 0.0,
+  "mean_segments": 64.225,
+  "mean_octave_reloads": 119.5625,
+  "mean_newton_iterations": 3.0083333333333333,
+  "p95_newton_iterations": 3.0,
+  "all_gates_passed": true
+}

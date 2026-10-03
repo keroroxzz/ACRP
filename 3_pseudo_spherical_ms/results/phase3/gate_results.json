@@ -1,0 +1,7 @@
+{
+    "Gate 4A: Daytime branch < 5%": "PASS",
+    "Gate 4B: Twilight branch < 5%": "PASS",
+    "Gate 4C: Twilight beats two-stream": "PASS",
+    "Gate 4D: Branch switch correct": "PASS",
+    "Gate 4E: SS-correction helps daytime": "PASS"
+}

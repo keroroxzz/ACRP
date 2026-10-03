@@ -1,0 +1,49 @@
+{
+  "seed": 20260718,
+  "rays": 420,
+  "model": {
+    "density": "max(0, B(x) - lambda R(x))",
+    "lambda": 1.35,
+    "backbone_frequencies": [
+      1,
+      2,
+      4
+    ],
+    "residual_frequencies": [
+      8,
+      16
+    ],
+    "residual_mean": 0.10823811515247089,
+    "residual_std": 0.05249822234045443,
+    "operator_rule": "h(B)=E[(B-lambda R)_+]"
+  },
+  "results": {
+    "raw": {
+      "mean_signed_tau_error": 0.415481636995254,
+      "mean_abs_tau_error": 0.415481636995254,
+      "p95_abs_tau_error": 0.626307905799475,
+      "p99_abs_tau_error": 0.6798388291868035,
+      "mean_abs_transmittance_error": 0.15905522079772078,
+      "p95_transmittance_error": 0.22804199902178054,
+      "p99_transmittance_error": 0.2752654509977056
+    },
+    "mean_substitution": {
+      "mean_signed_tau_error": -0.007088571678877458,
+      "mean_abs_tau_error": 0.038131868100909676,
+      "p95_abs_tau_error": 0.095281063025033,
+      "p99_abs_tau_error": 0.12799919944791105,
+      "mean_abs_transmittance_error": 0.018387060234035014,
+      "p95_transmittance_error": 0.04574592172339009,
+      "p99_transmittance_error": 0.0643249750866088
+    },
+    "distribution_aware": {
+      "mean_signed_tau_error": -0.0020785661896828146,
+      "mean_abs_tau_error": 0.036626881922461836,
+      "p95_abs_tau_error": 0.09270810128441677,
+      "p99_abs_tau_error": 0.13014193702993226,
+      "mean_abs_transmittance_error": 0.017511170981075918,
+      "p95_transmittance_error": 0.045005180600723456,
+      "p99_transmittance_error": 0.06106848268681725
+    }
+  }
+}

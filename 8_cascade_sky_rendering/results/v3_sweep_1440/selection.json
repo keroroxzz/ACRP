@@ -1,0 +1,93 @@
+{
+  "policy": "Fastest FIXED candidate with every calibration scene RMSE <= cap; no runtime reference access",
+  "calibration_scenes": 14,
+  "rmse_domain": "float display RGB in [0,1], before PNG quantization",
+  "tiers": [
+    {
+      "rmse_cap": 0.002,
+      "variant": "v2"
+    },
+    {
+      "rmse_cap": 0.003,
+      "variant": "L2-N4-T0.05"
+    },
+    {
+      "rmse_cap": 0.004,
+      "variant": "L2-N4-T0.05"
+    },
+    {
+      "rmse_cap": 0.005,
+      "variant": "L2-N4-T0.07"
+    },
+    {
+      "rmse_cap": 0.0075,
+      "variant": "L2-N4-T0.09"
+    },
+    {
+      "rmse_cap": 0.01,
+      "variant": "L2-N4-T0.16"
+    },
+    {
+      "rmse_cap": 0.015,
+      "variant": "L2-N4-T0.32"
+    },
+    {
+      "rmse_cap": 0.02,
+      "variant": "L2-N4-T0.32"
+    }
+  ],
+  "lowest_error_10x_candidate": "L2-N4-T0.16",
+  "validation_keys": [
+    "anchor",
+    "v2",
+    "L2-N4-T0.05",
+    "L2-N4-T0.07",
+    "L2-N4-T0.09",
+    "L2-N4-T0.16",
+    "L2-N4-T0.32"
+  ],
+  "frozen_definitions": {
+    "anchor": {
+      "levels": 3,
+      "factor": 2,
+      "threshold": 0.04
+    },
+    "v2": {
+      "v2": true,
+      "levels": 2,
+      "factor": 4,
+      "threshold": 0.035
+    },
+    "L2-N4-T0.05": {
+      "v2": true,
+      "levels": 2,
+      "factor": 4,
+      "threshold": 0.05
+    },
+    "L2-N4-T0.07": {
+      "v2": true,
+      "levels": 2,
+      "factor": 4,
+      "threshold": 0.07
+    },
+    "L2-N4-T0.09": {
+      "v2": true,
+      "levels": 2,
+      "factor": 4,
+      "threshold": 0.09
+    },
+    "L2-N4-T0.16": {
+      "v2": true,
+      "levels": 2,
+      "factor": 4,
+      "threshold": 0.16
+    },
+    "L2-N4-T0.32": {
+      "v2": true,
+      "levels": 2,
+      "factor": 4,
+      "threshold": 0.32
+    }
+  },
+  "validation_seed": 20261004
+}

@@ -1,0 +1,39 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+  "res": [
+    1280,
+    720
+  ],
+  "presets": {
+    "low": {
+      "gpu_ms": 2.3306240000000003,
+      "rmse": 0.00030892028007656336,
+      "edge_rmse": 0.0008910520118661225,
+      "evals_per_px": 28.17784881591797,
+      "sunrays_per_px": 1.0924739837646484,
+      "skipped_ratio": 0.6872467980130278,
+      "equal_quality_march_ms": 2.9175939274378524,
+      "speedup": 1.2518509752915323
+    },
+    "medium": {
+      "gpu_ms": 4.066816,
+      "rmse": 0.00012123547639930621,
+      "edge_rmse": 0.0003494133416097611,
+      "evals_per_px": 43.881961822509766,
+      "sunrays_per_px": 1.124570369720459,
+      "skipped_ratio": 0.6872467980130278,
+      "equal_quality_march_ms": 5.401662298343726,
+      "speedup": 1.328228840041872
+    },
+    "converged": {
+      "gpu_ms": 4.586496,
+      "rmse": 8.615842671133578e-05,
+      "edge_rmse": 0.0002480967086739838,
+      "evals_per_px": 51.16670227050781,
+      "sunrays_per_px": 1.1434526443481445,
+      "skipped_ratio": 0.6872467980130278,
+      "equal_quality_march_ms": 7.324573632199464,
+      "speedup": 1.5969868135063159
+    }
+  }
+}

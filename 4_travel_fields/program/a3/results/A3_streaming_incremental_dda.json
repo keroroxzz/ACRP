@@ -1,0 +1,22 @@
+{
+  "seed": 20260718,
+  "rays_tested": 2027,
+  "adversarial_rays_tested": 27,
+  "frequencies": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "all_streams_match": true,
+  "stream_mismatches": 0,
+  "max_boundary_time_difference": 0.0,
+  "mask_mismatches_total": 0,
+  "event_count_mismatch_total": 0,
+  "mean_events_reference": 64.81154415392206,
+  "mean_events_streaming": 64.81154415392206,
+  "critical_finding": "Recompute t_max from integer plane index; cumulative t_max += t_delta can split exact multi-axis ties due to floating-point drift.",
+  "memory_complexity": "O(1) DDA state + O(L) octave state",
+  "all_tests_passed": true
+}
